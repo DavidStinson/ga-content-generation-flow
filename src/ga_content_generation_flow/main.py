@@ -8,6 +8,7 @@ from pydantic import BaseModel
 from crewai.flow import Flow, listen, start
 
 from ga_content_generation_flow.crews.outline_crew.outline_crew import OutlineCrew
+from ga_content_generation_flow.crews.content_crew.content_crew import ContentCrew
 
 class ContentState(BaseModel):
     module_title: str = "Introduction to Javascript Arrays"
@@ -52,11 +53,14 @@ class ContentGenerationFlow(Flow[ContentState]):
             microlesson = (
                 ContentCrew()
                 .crew()
-                .kickoff(inputs=self.state.model_dump())
+                .kickoff(inputs={**self.state.model_dump(), **microlesson})
             )
 
             self.state.microlessons_text.append(microlesson.raw)
+
             print("MICROLESSION GENERATED!!!")
+
+        print(self.state.microlessons_text)
 
 
     # @listen(generate_poem)
