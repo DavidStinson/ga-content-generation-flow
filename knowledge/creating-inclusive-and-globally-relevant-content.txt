@@ -1,0 +1,142 @@
+GA's mission is to enable people to pursue the work they love. Implicit in that mission and in our operating models is opening career paths to individuals who are underserved by the greater education and employment systems at large. For example, empowering people of color and women to pursue lucrative careers in tech fields that are widely known to be imbalanced toward white men. 
+
+We acknowledge that media and cultural stereotypes contribute to this imbalance - for example, the image of the upper middle class, white male as the prototypical computer programmer both influences who decides to enter that field, and how people who don't match that image are treated by others in the field. 
+
+GA can play a powerful role in shifting those perceptions as people are entering the fields, and proactively affirm our belief that everyone belongs in tech. 
+
+We'll explore everything in more detail, but to start, here's our Inclusivity Checklist:
+
+Representation Matters. Lead with diversity.
+Avoid gendered language and stereotypes.
+Avoid culturally-specific analogies, metaphors, and references.
+Be careful around idioms and turns-of-phrase.
+Always have transcripts (and/or captions) for video content.
+Avoid references to pork, beef, dogs, alcohol, and sex.
+Provide differentiation for in person courses.
+Use case studies from everywhere.
+
+Guideline #1: Representation Matters. Lead with diversity.
+
+Pending a GA wide definition, when we say diversity, we mean:  
+
+Race. 
+Ethnic identity and country of origin. 
+Gender, gender identity and sexuality. 
+Socioeconomic status and class. 
+Ability. 
+Age.  
+Affinities, interests and hobbies. 
+We aim to make our curriculum human and relatable by: 
+
+Integrating real quotes from thought leaders
+Using real business examples and case studies to deconstruct concepts
+Creating fictional companies and scenarios to solve realistic business problems
+Using analogies 
+Using memes, GIFs and light humor to bring levity to the curriculum 
+In all of these, it is easy for dominant culture to dominate the curriculum. "Leading with Diversity" means representation and inclusion is woven into the fabric how we research, engage and plan for curriculum. It is not an afterthought. 
+
+Checklist: 
+
+When using names in a scenario, avoid using only white, gendered names like John Doe or Jane Smith. Use an online name generator (here's a good one) to come up with more cross-culturally and internationally representative names.
+Videos, photos and graphics should depict visible diversity of people in terms of race, ethnicity, age, gender, ability. 
+Use quotes from black, brown and women thought leaders. This likely means being more intentional in your searches for underrepresented voices than simply googling "Quote on X" and using the first things to show up. 
+Use case studies from black, brown and women-owned companies. Same as above. 
+When selecting actors or people to interview, look for diversity in background, gender, race, and more. While it makes sense to stick with one actor or interviewee in one lesson, aim for a diversity across a set of lessons.
+
+Guideline #2: Avoid gendered language and stereotypes.
+
+We live in a culture of entrenched gender stereotypes. This can show up in the curriculum in ways that may be easy to overlook. This requires we actively look for gender stereotypes as we review/update/create curriculum. 
+
+Some examples of gender stereotypes appearing in curriculum: 
+
+A tube of lipstick used as an icon for "vanity metrics." 
+Choose the more inclusive content:
+
+"In Java, we use camel case for class names; for example, manKind."
+"In Java, we use camel case for class names; for example, humanKind."
+
+ And the answer is...
+
+Checklist:
+
+Avoid gendered language unless specifically referring to someone who identifies as that gender.
+Be on the lookout for gendered, stereotypical associations. 
+When describing individuals or characters in a lesson, alternate between people who identify with "he", "she", and "they" pronouns.
+
+Guideline #3: Avoid regionally-specific analogies, metaphors, and references.
+
+We’re a global company and an American instructional design team with learners everywhere from Atlanta, Georgia to Tbilisi, Georgia - and the same jokes don’t land very well in both places.
+
+Choose the more inclusive content:
+
+"Think of OKRs like a football team (any Raiders fans out there?!). If we start at the top, the objective of the head coach is to win the Super Bowl. The KRs to get them there might be to average 200 rushing yards per game and get 30 sacks in the season. Those KRs become the objectives of the offensive and defensive coordinators, and they develop their own KRs to meet those objectives. It's all a big cascade!"
+"OKRs work in a cascade. Imagine that you want your restaurant to make it to the "Top 10 Best Restaurants" in your city. That's the overall objective, and your KRs might be to get 3 articles in the press each month and to create two new, unique dishes each month. Those KRs become the objectives of the PR team and the head chef, and they develop KRs to help them meet those objectives."
+
+ And the answer is...
+
+Checklist:
+
+Is the analogy only relevant to one population segment? If so, it's probably best to find another option.
+If you're referring to a place in a lesson, don't always use locations in the U.S. unless it's a specific example. If possible, use cities, countries, or landmarks from around the world.
+Even in more commonly understood examples, use simple language and common terms to make sure it's accessible.
+If you're using a dataset or example that involves money, consider switching things up by using Euros or Pounds instead of Dollars.
+
+Guideline #4: Be careful around idioms and turns-of-phrase.
+
+Choose the more inclusive content:
+
+"The next step is to remove all dirty data from your database."
+"The next step is to scrub your database of all dirty data."
+
+ And the answer is...
+
+Checklist:
+
+Does the word you're using have multiple meanings or different meanings in different contexts? If so, consider using a different word.
+Use language that's as close as possible to what you're trying to convey. Abstractions, slang, or complex language can be inaccessible if English isn't someone's native language.
+Jargon and business terms like "agile" or "prototype" might be hard to grasp for non-native English speakers. If you have to use a jargon term, make sure to clearly define it when it's first used and review that definition as needed.
+If you're translating materials from English to another language, have an SME who speaks that language review the translation to make sure that translated business terms and jargon make sense contextually.
+Knowledge checks are an especially important place to make sure your language is simple. Re-read the question and answer options to make sure they're very clear, concise, and idiom-free.
+While they sound fun to some, phrases like "killing it!" or "crushed that project" are idiomatic and regionally-specific. Use language that's reasonable and relatable to people from all areas.
+
+Guideline #5: Always have transcripts (and/or captions) for video content.
+
+No game for this one because it's pretty straightforward.
+
+Transcripts make a huge difference to English language learners when they're following along with video content. We convey a lot of important information in videos, but some things might be lost if English isn't someone's native language. Transcripts and captions also make a huge difference for individuals with a hearing disability.
+
+Guideline #6: Avoid references to pork, beef, dogs, alcohol, and sex.
+
+GA serves learners of diverse racial, ethnic, and religious backgrounds. To accommodate their beliefs, avoid references to or images of these things as much as possible:
+
+Pigs / pork products
+Beef
+Dogs
+Overt references to alcohol, drinking, being drunk, drugs, or partying.
+Overtly sexual / romantic references 
+While we should attempt to avoid these items, it's not always possible to do so - especially if you feel that it goes against GA's values and harms the quality of the content. If you have a question about anything, reach out to HR.
+
+Guideline #7: Provide differentiation for in person courses.
+
+There are some types of activities and exercises that we take for granted. Learners with different backgrounds might be more or less comfortable with activities that involve presentations, creative thinking, or lots of energy. Your learners also might have a diversity of experience and comfort with the course material.
+
+While we can't account for everyone who might participate in an activity, we can make it easier for instructors and students to get the most out of a given exercise by differentiating what we provide.
+
+Checklist:
+
+Provide a variety of activity types in each lesson - individual, partner, or group work. This gives introverts and extroverts each their time to shine.
+For activities that involve partner or group work, provide structure with explicit instructions, a clear goal or deliverable, and time limits. If it makes sense, consider assigning roles within the group so that everyone knows what to do. For students who aren't familiar with group work, more structure will help them work together better.
+Provide plenty of structure for exercises that involve presenting to the group: a clear description of what should be covered, time limit for the presentation, templates, and examples. For students who aren't comfortable with public speaking, more guidance can help ease the pain.
+If an activity requires lots of creative thinking, provide a framework or a step-by-step process. Creative, generative thinking doesn't come naturally for everyone and providing a process for doing so can help people get started.
+Know your audience when it comes to energizers and icebreakers. Different regions have different norms for how to interact with strangers or colleagues. Consider providing alternative activities that an instructor can swap out when teaching in different locations.
+As much as possible, provide "basic" and "bonus" requirements for an activity. For students with different comfort levels with the material, outlining a more accessible deliverable can help them feel like they're still completing the activity, while more advanced students can continue working on extra requirements.
+
+Guideline #8: Use case studies from everywhere.
+
+It can be easy to use American case studies and examples in lesson materials, but those don't always resonate with learners outside the U.S. It's okay to use American examples, but bring in examples from other regions to diversify the lesson.
+
+Checklist:
+
+In a given lesson (myGA or in-person), try to use case studies from at least two different countries or regions.
+For an in-person course, consider providing alternative examples in the speaker notes or the back of the presentation so that instructors can swap out an unfamiliar example as needed.
+When using an American case study, pick major brands, locations, and celebrities that are well-known outside the U.S. (Think: Coca Cola instead of Tab.)

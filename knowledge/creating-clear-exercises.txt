@@ -1,0 +1,43 @@
+When writing an exercise, the golden rule is “Don’t make me think.” When students have to start thinking about the operations of the exercise, they have less time to think about what they should be learning and practicing. From the instructor’s perspective, good exercise instructions allow them to focus on helping students with the work, rather than clarifying logistics and directions.
+
+Follow these guidelines to ensure that you write great instructions for solo, pair, or group exercises.
+
+Must haves
+
+
+Share the purpose of the exercise. 
+Why are we doing this exercise? What should students take away from it? How does it relate to what we’ve already covered (or will cover) in class? Always share the “why” of the exercise in the instructions.
+
+
+Clearly explain the deliverables.
+How should students show that they did the exercise? Whether it’s jotting down a few notes, filling in a handout, sharing with the class, or completing a code challenge, make sure that students know what their final output should be.
+
+
+Explain each student’s role in the exercise.
+For pair or group activities, if different people should complete different tasks, clearly explain each person’s role in the exercise – if they should do different things, develop a different deliverable, etc.
+
+
+Separate out each step.
+If an exercise contains multiple steps, separate out each step so that the order is clear to students. Instead of writing a paragraph of text, use bullets or numbering to clearly break out each text. If needed, separate the steps onto multiple slides for clarity.
+
+
+Choose the right slide template.
+When working in Google Slides, use the slide template that best supports the purpose and structure of the exercise. (See this deck for further guidance.)
+
+
+Check for inclusivity.
+Exercises can make or break a lesson, so being mindful of inclusive design is crucial here. Make sure that your language is clear and free of jargon/slang, visuals and references are diverse, and that it resonates with a global audience.  (More guidelines on inclusive content are here.)
+
+
+Flex for remote.
+Try to avoid using language like “turn to a partner” or “at your table” on a slide. These phrase don’t translate to remote! Keep the language on the slide as neutral as possible, and add guidance in the instructor notes about how to adapt the activity for a remote classroom. (More guidelines on remote classrooms are here.)
+
+As needed
+
+
+Share an example of the final output.
+When possible, share an example of the deliverable so that students know what “good” looks like and what they should be developing.
+
+
+Have groups designate a “speaker”.
+If groups will share out their work with the class, remind them to designate a person to present.
