@@ -1,6 +1,7 @@
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
+from pydantic import BaseModel, Field
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
@@ -13,7 +14,10 @@ text_sources_instructional_architect = TextFileKnowledgeSource(
 
 text_sources_learning_experience_designer = TextFileKnowledgeSource(
     file_paths=["creating-clear-exercises.txt",
-                "markdown-document-structure.txt", "modular-code.txt", "modular-writing.txt", "technical-voice.txt", "creating-inclusive-and-globally-relevant-content.txt"]
+                "markdown-document-structure.txt", "modular-code.txt",
+                "modular-writing.txt", "technical-voice.txt",
+                "creating-inclusive-and-globally-relevant-content.txt"
+               ]
 )
 
 claude_sonnet = LLM(
@@ -25,6 +29,20 @@ chatgpt_41 = LLM(
     model="gpt-4.1",
     max_tokens=8192,
 )
+
+class MicrolessonModel(BaseModel):
+    """Represents a single microlesson within the module."""
+    title: str
+    time: int
+    learningObjective: str
+    outline: list[str]
+
+class ModuleModel(BaseModel):
+    overview: str
+    tools: list[str]
+    learnerPersona: str
+    prerequisites: list[str]
+    microlessons: list[MicrolessonModel]
 
 @CrewBase
 class OutlineCrew():
@@ -54,7 +72,8 @@ class OutlineCrew():
     @task
     def generate_module_outline_task(self) -> Task:
         return Task(
-            config=self.tasks_config['generate_module_outline']
+            config=self.tasks_config['generate_module_outline'],
+            output_json=ModuleModel
         )
 
     @crew
@@ -64,8 +83,8 @@ class OutlineCrew():
         # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
 
         outline_crew = Crew(
-            agents=self.agents, # Automatically created by the @agent decorator
-            tasks=self.tasks, # Automatically created by the @task decorator
+            agents=self.agents,  # Automatically created by the @agent decorator
+            tasks=self.tasks,  # Automatically created by the @task decorator
             process=Process.sequential,
             verbose=True,
             output_log_file="./output_logs/outline_crew"

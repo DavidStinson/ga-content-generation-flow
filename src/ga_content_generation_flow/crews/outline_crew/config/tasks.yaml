@@ -1,6 +1,6 @@
 generate_module_outline:
   agent: instructional_architect
-  output_file: output/module-outline.md
+  output_file: output/module-outline.json
   description: >
     As the Senior Instructional Architect, your primary task is to generate a 
     detailed module outline for a technical (with coding) or non-technical 
@@ -10,7 +10,8 @@ generate_module_outline:
     content).
 
     Your process should involve the following steps, informed by the provided 
-    module topic, learner persona, and learning objectives as follows:
+    module topic, learner persona, how many minutes the module is,and learning 
+    objectives as follows:
 
     The module topic is: {module_topic} 
     
@@ -18,22 +19,28 @@ generate_module_outline:
 
     The learning objectives are: {learning_objectives}
 
+    The module is {module_minutes} minutes long.
+
     1.  Define Module Title: Use the provided title: {module_title}.
 
     2.  Analyze Inputs and Infer Context:
         Review the provided module topic, learner persona, and any 
-        learning_objectives. From these, infer:
+        learning objectives. From these, infer:
         - Appropriate technical or domain prerequisites.
         - Learner motivations, goals, and challenges.
         - Real-world contexts and examples relevant to the topic.
 
     3.  Design Microlesson Structure:
         Determine the number and sequence of microlessons based on number of 
-        learning_objectives provided. For each microlesson:
+        learning objectives provided. For each microlesson:
         - Create a concise title.
         - Outline key theoretical concepts to be introduced.
         - Include a method for learners to check their understanding (e.g., a 
           multiple-choice question, coding prompt, or reflection).
+        - Include estimated time durations for each microlesson. These
+          should reflect realistic pacing for remote or hybrid delivery, 
+          keeping {learner_persona} in mind, including time for guided practice 
+          and learner interaction.
 
     4.  Populate the Outline with Clear, Industry-Relevant Content:
         For each microlesson, provide a detailed overview of the key topics to 
@@ -51,6 +58,7 @@ generate_module_outline:
         - Ensure each microlesson balances conceptual understanding and 
           practical application, tied clearly to industry-relevant skills and 
           tasks.
+        - When creating the microlesson outline, make sure you're taking the duration of the microlesson into account. 
 
     5.  Embed Best Practices:
         Ensure alignment with GA's adult learning theory as outlined in 
@@ -61,26 +69,19 @@ generate_module_outline:
         - Ensure accessibility for remote learners.
 
   expected_output: >
-    A comprehensive module outline in Markdown format, structured according to 
+    A comprehensive module outline in JSON format, structured according to 
     the following:
 
-    - **Instructor overview and agenda:**
-      - Overview: A brief summary of the module's purpose and structure.
-      - Agenda: A list of **generated** microlesson titles. Include the estimated time it will take to complete each microlesson in "[ ]".
-      - Required Tools: List of necessary software as defined in {tools}.
-    - **Learner Persona and Prerequisites:**
-      - Learner Persona: A description of the target audience (using the 
-        provided {learner_persona}).
-      - Prerequisites: A list of required skills or knowledge (based on 
+    - `overview`: A brief summary of the module's purpose and structure (generated based on {module_topic}).
+    - `tools`: List of necessary software as defined in {tools}.
+    - `learnerPersona`: A description of the target audience (using the 
+      provided {learner_persona}).
+    - `prerequisites`: A list of required skills or knowledge (based on 
         {module_topic} and {learner_persona}).
-    - **Learning Objectives and Outcomes:**
-      - High-Level Learning Goal: A sentence stating the module's main purpose 
-        (generated based on {module_topic}).
-      - Learning Objectives: A bulleted list of provided {learning_objectives}
-    - **Microlessons:**
+    - Microlessons array:
       - For each microlesson:
-        - Title: Include the title and add the estimated time in "[ ]". For 
-          example : "Introduction to APIs [15 min]"
-        - Learning Objective
-        - Outline: A brief outline of the key concepts that will be covered in 
-          the microlesson.
+        - `title`: Include the title of the microlesson. 
+        - `time`: Include the estimated time it will take to complete the microlesson in minutes.
+        - `learningObjective`: The exact learning objective for the microlesson as provided in the {learning_objectives}.
+        - `outline`: A brief outline of the key concepts that will be covered 
+          in the microlesson.

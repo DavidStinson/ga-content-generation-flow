@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import json
+
 from random import randint
 
 from pydantic import BaseModel
@@ -14,12 +16,14 @@ class ContentState(BaseModel):
     learning_objectives: list[str] = [
         "Define JavaScript arrays and explain how they organize data.\n",
         "Identify the components of an array, including its elements and index positions.\n",
-        "Create arrays using JavaScript literal notation in VS Code.\n",
+        "Create arrays using JavaScript literal notation.\n",
         "Access and modify elements within an array using square brackets.\n",
-        "Use basic array methods, such as push() and pop(), to manage array data."
+        "Use basic array methods, such as push() and pop(), to manage array data.\n"
     ]
     tools: str = "Visual Studio Code"
     microlessons: list[str] = []
+    module_minutes: int = 90
+    microlessons_text: list[str] = []
 
 
 class ContentGenerationFlow(Flow[ContentState]):
@@ -37,8 +41,23 @@ class ContentGenerationFlow(Flow[ContentState]):
             .kickoff(inputs=self.state.model_dump())
         )
 
-        print("OUTLINE GENERATED!!!", result.raw)
-        # self.state. = result.raw
+        meta = json.loads(result.raw)
+
+        print("OUTLINE GENERATED!!!")
+        self.state.microlessons = meta["microlessons"]
+
+
+
+        for microlesson in self.state.microlessons:
+            microlesson = (
+                ContentCrew()
+                .crew()
+                .kickoff(inputs=self.state.model_dump())
+            )
+
+            self.state.microlessons_text.append(microlesson.raw)
+            print("MICROLESSION GENERATED!!!")
+
 
     # @listen(generate_poem)
     # def save_poem(self):
