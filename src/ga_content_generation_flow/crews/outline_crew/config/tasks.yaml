@@ -67,6 +67,7 @@ generate_module_outline:
         - Keep theory concise and actionable.
         - Make activities highly relevant and tool-aligned with {tools}.
         - Ensure accessibility for remote learners.
+        - Never include any multiple choice questions or knowledge checks.
 
   expected_output: >
     A comprehensive module outline in JSON format, structured according to 
@@ -78,10 +79,58 @@ generate_module_outline:
       provided {learner_persona}).
     - `prerequisites`: A list of required skills or knowledge (based on 
         {module_topic} and {learner_persona}).
+    - `qaReasoning`: An empty string. 
     - Microlessons array:
       - For each microlesson:
-        - `title`: Include the title of the microlesson. 
+        - `title`: Include the title of the microlesson.
+        - `slug`: Include a slug for the microlesson, generated from the title.
+        - `id`: Include an id for the microlesson, starting at 1 and 
+          incrementing by 1 for each microlesson.
         - `time`: Include the estimated time it will take to complete the microlesson in minutes.
         - `learningObjective`: The exact learning objective for the microlesson as provided in the {learning_objectives}.
         - `outline`: A brief outline of the key concepts that will be covered 
           in the microlesson.
+
+module_outline_qa:
+  agent: curriculum_quality_assurance_expert
+  output_file: output/module-outline-qa.json
+  description: >
+    In this task you will use the following information to review the module outline:
+
+    For each microlesson in the module outline, you will:
+
+    1. Ensure the microlesson outline is aligned with the learning objective of the microlesson.
+    2. Ensure the microlesson outline is appropriate for the learner persona.
+    3. Ensure the microlesson outline is realistic given the time constraints of the module.
+
+    You may make changes to the module outline to ensure it is aligned with 
+    these three rules. You should remove any items from the outline that do not
+    directly contribute to the learning objective of the microlesson.
+
+    The output of this task is a JSON file with the updated module outline.
+
+    You should also add a new property to the JSON called "qaReasoning" that 
+    explains the reasoning behind the changes you made to the module outline in 
+    extreme detail.
+  expected_output: >
+    A comprehensive module outline in JSON format, structured according to 
+    the following:
+
+    - `overview`: Identical to the overview in the input module outline.
+    - `tools`: Identical to the tools in the input module outline.
+    - `learnerPersona`: Identical to the learner persona in the input module 
+      outline.
+    - `prerequisites`: Identical to the prerequisites in the input module 
+      outline.
+    - `qaReasoning`: A brief explanation of the reasoning behind the changes 
+      you made to the module outline in extreme detail.
+    - Microlessons array:
+      - For each microlesson:
+        - `title`: Identical to the title in the input module outline.
+        - `slug`: Identical to the slug in the input module outline.
+        - `id`: Identical to the id in the input module outline.
+        - `time`: Identical to the time in the input module outline.
+        - `learningObjective`: Identical to the learning objective in the 
+          input module outline.
+        - `outline`: A QAed outline of the key concepts that will be
+          covered in the microlesson.

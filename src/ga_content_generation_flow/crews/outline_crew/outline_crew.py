@@ -25,6 +25,11 @@ claude_sonnet = LLM(
     max_tokens=8192
 )
 
+openai_o3 = LLM(
+    model="o3-mini",
+    max_tokens=8192,
+)
+
 chatgpt_41 = LLM(
     model="gpt-4.1",
     max_tokens=8192,
@@ -33,6 +38,8 @@ chatgpt_41 = LLM(
 class MicrolessonModel(BaseModel):
     """Represents a single microlesson within the module."""
     title: str
+    slug: str
+    id: int
     time: int
     learningObjective: str
     outline: list[str]
@@ -42,6 +49,7 @@ class ModuleModel(BaseModel):
     tools: list[str]
     learnerPersona: str
     prerequisites: list[str]
+    qaReasoning: str
     microlessons: list[MicrolessonModel]
 
 @CrewBase
@@ -65,6 +73,14 @@ class OutlineCrew():
             knowledge_sources=[text_sources_instructional_architect],
             cache=False
         )
+    
+    @agent
+    def curriculum_quality_assurance_expert(self) -> Agent:
+        return Agent(
+            config=self.agents_config['curriculum_quality_assurance_expert'],
+            verbose=True,
+            llm=openai_o3,
+        )
 
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:
@@ -73,6 +89,13 @@ class OutlineCrew():
     def generate_module_outline_task(self) -> Task:
         return Task(
             config=self.tasks_config['generate_module_outline'],
+            output_json=ModuleModel
+        )
+    
+    @task
+    def module_outline_qa_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['module_outline_qa'],
             output_json=ModuleModel
         )
 
@@ -90,5 +113,7 @@ class OutlineCrew():
             output_log_file="./output_logs/outline_crew"
             # process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
         )
+
+        outline_crew.reset_memories(command_type = 'all')
 
         return outline_crew
