@@ -58,6 +58,9 @@ class ContentGenerationFlow(Flow[ContentState]):
             )
 
             self.state.microlessons_text.append(microlesson_output.raw)
+            self.state.microlessons[microlesson["id"] - 1]["sme_content"] = microlesson_output.raw
+
+            print(self.state.microlessons[microlesson["id"] - 1])
 
             print("MICROLESSION GENERATED!!!")
 
@@ -69,6 +72,8 @@ class ContentGenerationFlow(Flow[ContentState]):
             )
 
             self.state.microlessons_ld_text.append(microlesson_output.raw)
+
+        print(self.state.microlessons_text)
 
 
     # @listen(generate_poem)

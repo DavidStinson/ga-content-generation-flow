@@ -1,9 +1,28 @@
-from crewai import Agent, Crew, Process, Task
+from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
+from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
 # https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
+
+chatgpt_41 = LLM(
+    model="gpt-4.1",
+    max_tokens=16384,
+)
+
+openai_o3 = LLM(
+    model="o3",
+    max_tokens=8192,
+)
+
+text_sources_learning_experience_designer = TextFileKnowledgeSource(
+    file_paths=["creating-clear-exercises.txt",
+                "markdown-document-structure.txt", "modular-code.txt",
+                "modular-writing.txt", "technical-voice.txt",
+                "creating-inclusive-and-globally-relevant-content.txt"
+               ]
+)
 
 @CrewBase
 class LdCrew():
@@ -18,33 +37,22 @@ class LdCrew():
     # If you would like to add tools to your agents, you can learn more about it here:
     # https://docs.crewai.com/concepts/agents#agent-tools
     @agent
-    def researcher(self) -> Agent:
+    def learning_experience_designer(self) -> Agent:
         return Agent(
-            config=self.agents_config['researcher'],
-            verbose=True
+            config=self.agents_config['learning_experience_designer'],
+            verbose=True,
+            llm=chatgpt_41,
+            knowledge_sources=[text_sources_learning_experience_designer],
+            cache=False
         )
-
-    @agent
-    def reporting_analyst(self) -> Agent:
-        return Agent(
-            config=self.agents_config['reporting_analyst'],
-            verbose=True
-        )
-
+    
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:
     # https://docs.crewai.com/concepts/tasks#overview-of-a-task
     @task
-    def research_task(self) -> Task:
+    def learning_design_task(self) -> Task:
         return Task(
-            config=self.tasks_config['research_task'],
-        )
-
-    @task
-    def reporting_task(self) -> Task:
-        return Task(
-            config=self.tasks_config['reporting_task'],
-            output_file='report.md'
+            config=self.tasks_config['learning_design_task'],
         )
 
     @crew
