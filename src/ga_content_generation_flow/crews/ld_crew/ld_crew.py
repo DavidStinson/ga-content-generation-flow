@@ -1,36 +1,13 @@
-from crewai import Agent, Crew, Process, Task, LLM
+from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
 # https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
 
-claude_sonnet = LLM(
-    model="claude-3-5-sonnet-20240620",
-    max_tokens=8192
-)
-
-chatgpt_41 = LLM(
-    model="gpt-4.1",
-    max_tokens=8192,
-)
-
-text_sources_instructional_architect = TextFileKnowledgeSource(
-    file_paths=["general_assembly_learning_philosophy.txt"]
-)
-
-text_sources_learning_experience_designer = TextFileKnowledgeSource(
-    file_paths=["creating-clear-exercises.txt",
-                "markdown-document-structure.txt", "modular-code.txt",
-                "modular-writing.txt", "technical-voice.txt",
-                "creating-inclusive-and-globally-relevant-content.txt"
-               ]
-)
-
 @CrewBase
-class ContentCrew():
-    """ContentCrew crew"""
+class LdCrew():
+    """LdCrew crew"""
 
     # Learn more about YAML configuration files here:
     # Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended
@@ -41,42 +18,38 @@ class ContentCrew():
     # If you would like to add tools to your agents, you can learn more about it here:
     # https://docs.crewai.com/concepts/agents#agent-tools
     @agent
-    def subject_matter_expert(self) -> Agent:
+    def researcher(self) -> Agent:
         return Agent(
-            config=self.agents_config['subject_matter_expert'],
-            verbose=True,
-            llm=chatgpt_41,
-            cache=False
+            config=self.agents_config['researcher'],
+            verbose=True
         )
 
     @agent
-    def learning_experience_designer(self) -> Agent:
+    def reporting_analyst(self) -> Agent:
         return Agent(
-            config=self.agents_config['learning_experience_designer'],
-            verbose=True,
-            llm=chatgpt_41,
-            knowledge_sources=[text_sources_learning_experience_designer],
-            cache=False
+            config=self.agents_config['reporting_analyst'],
+            verbose=True
         )
 
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:
     # https://docs.crewai.com/concepts/tasks#overview-of-a-task
     @task
-    def develop_microlesson_content_task(self) -> Task:
+    def research_task(self) -> Task:
         return Task(
-            config=self.tasks_config['develop_microlesson_content'],
+            config=self.tasks_config['research_task'],
         )
 
     @task
-    def learning_design_task(self) -> Task:
+    def reporting_task(self) -> Task:
         return Task(
-            config=self.tasks_config['learning_design_task'],
+            config=self.tasks_config['reporting_task'],
+            output_file='report.md'
         )
 
     @crew
     def crew(self) -> Crew:
-        """Creates the ContentCrew crew"""
+        """Creates the LdCrew crew"""
         # To learn how to add knowledge sources to your crew, check out the documentation:
         # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
 

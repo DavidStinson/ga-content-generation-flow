@@ -9,6 +9,7 @@ from crewai.flow import Flow, listen, start
 
 from ga_content_generation_flow.crews.outline_crew.outline_crew import OutlineCrew
 from ga_content_generation_flow.crews.content_crew.content_crew import ContentCrew
+from ga_content_generation_flow.crews.ld_crew.ld_crew import LdCrew
 
 class ContentState(BaseModel):
     module_title: str = "Introduction to Javascript Arrays"
@@ -25,7 +26,7 @@ class ContentState(BaseModel):
     microlessons: list[str] = []
     module_minutes: int = 90
     microlessons_text: list[str] = []
-
+    microlessons_ld_text: list[str] = []
 
 class ContentGenerationFlow(Flow[ContentState]):
     @start()
@@ -50,17 +51,24 @@ class ContentGenerationFlow(Flow[ContentState]):
 
 
         for microlesson in self.state.microlessons:
-            microlesson = (
+            microlesson_output = (
                 ContentCrew()
                 .crew()
                 .kickoff(inputs={**self.state.model_dump(), **microlesson})
             )
 
-            self.state.microlessons_text.append(microlesson.raw)
+            self.state.microlessons_text.append(microlesson_output.raw)
 
             print("MICROLESSION GENERATED!!!")
 
-        print(self.state.microlessons_text)
+        for microlesson in self.state.microlessons:
+            microlesson_output = (
+                LdCrew()
+                .crew()
+                .kickoff(inputs={**self.state.model_dump(), **microlesson})
+            )
+
+            self.state.microlessons_ld_text.append(microlesson_output.raw)
 
 
     # @listen(generate_poem)
