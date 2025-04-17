@@ -1,20 +1,11 @@
-General
-Assembly’s
-learning
-philosophy
-Putting
-real skills
-to work
+General Assembly’s learning philosophy
+Putting real skills to work
+
 The world is moving the fastest it ever has.
+
 And skills are somehow evolving even faster.
-At General Assembly, we know how difficult it is for individuals and businesses
-alike to keep up with emerging technologies and the constant evolution of
-roles, plus the skills and tools needed to succeed in those roles. It can feel
-incredibly overwhelming for everyone—especially for those early in their careers,
-contemplating new careers, or advancing their careers in nontraditional ways—
-along with businesses in the tech space and beyond. Many college grads,
-seasoned professionals, and employers across industries also feel unsure of—
-and unprepared for—the ever-evolving modern workforce.
+
+At General Assembly, we know how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles, plus the skills and tools needed to succeed in those roles. It can feel incredibly overwhelming for everyone—especially for those early in their careers, contemplating new careers, or advancing their careers in nontraditional ways— along with businesses in the tech space and beyond. Many college grads, seasoned professionals, and employers across industries also feel unsure of— and unprepared for—the ever-evolving modern workforce.
 The truth is, today’s workforce—regardless of industry—is increasingly fueled by
 tech skills that are becoming even more valuable as the digitally charged future of
 work, plus all things AI, continue to become more commonplace.
@@ -450,63 +441,5 @@ Learn more: ga.co
 Why General
 Assembly?
 Ready to power your progress?
-14
-PUTTING REAL SKILLS TO WORK
-GENERAL ASSEMBLY’S LEARNING PHILOSOPHY
-References
-1.	 Cohen, S. A. (1987). Instructional alignment: Searching for a magic bullet. Educational Researcher, 16(8), 16–20.
-2.	 Clark, R. C., & Mayer, R. E. (2023). e-Learning and the Science of Instruction: Proven Guidelines for Consumers and Designers of Multimedia
-Learning. John Wiley & Sons.
-3.	 CAST. (2018). Universal Design for Learning Guidelines, Version 2.2. https://udlguidelines.cast.org.
-4.	 Eccles, J. S., & Wigfield, A. (2024). The Development, Testing, and Refinement of Eccles, Wigfield, and Colleagues’ Situated Expectancy-Value
-Model of Achievement Performance and Choice. Educational Psychology Review, 36(2).
-5.	 Keller, J., & Suzuki, K. (2004). Learner motivation and e-learning design: A multinationally validated process. Journal of Educational Media,
-29(3), 229–239.
-6.	 Dweck, C. S., & Yeager, D. S. (2020). A Growth Mindset About Intelligence. In G. M. Walton & A. J. Krum (Eds.), Handbook of Wise
-Interventions. Guilford Publications.
-7.	 Scherer, R., & Campos, D. G. (2022). Measuring those who have their minds set: An item-level meta-analysis of the implicit theories of
-intelligence scale in education. Educational Research Review, 37.
-8.	 Bernard, R. M., Borokhovski, E., Schmid, R. F., Tamim, R. M., & Abrami, P. C. (2014). A meta-analysis of blended learning and technology use in
-higher education: From the general to the applied. Journal of Computing in Higher Education, 26(1), 87–122.
-9.	 Vallée, A., Blacher, J., Cariou, A., & Sorbets, E. (2020). Blended Learning Compared to Traditional Learning in Medical Education: Systematic
-Review and Meta-Analysis. Journal of Medical Internet Research, 22(8), e16504.
-10.	 Yu, Z., Xu, W., & Sukjairungwattana, P. (2022). Meta-analyses of differences in blended and traditional learning outcomes and students’
-attitudes. Frontiers in Psychology, 13(926947).
-11.	 Horn, M. B., & Staker, H. (2014). Blended: Using Disruptive Innovation to Improve Schools. Jossey-Bass.
-12.	 Herrington, J., Oliver, R., & Reeves, T. C. (2003). Patterns of engagement in authentic online learning environments. Australian Journal of
-Education Technology, 19(1), 59–71.
-13.	 Collins, A., Brown, J. S., & Newman, S. E. (2018). Cognitive apprenticeship: Teaching the crafts of reading, writing, and mathematics. In
-Knowing, Learning, and Instruction: Essays in Honor of Robert Glaser.
-14.	 van Merriënboer, J. J. G. (2019). The Four-Component Instructional Design Model: An Overview of its Main Design Principles.
-15.	 Lombardi, M. M. (2007). Authentic Learning for the 21st Century: An Overview. Educause Learning Initiative.
-16.	 Zimmerman, B. J. (2002). Becoming a Self-Regulated Learner: An Overview. Theory into Practice, 41(2), 64–70.
-17.	 Azevedo, R., & Cromley, J. G. (2004). Does Training on Self-Regulated Learning Facilitate Students’ Learning With Hypermedia? In Journal of
-Educational Psychology (Vol. 96, Issue 3, pp. 523–535).
-18.	 Zimmerman, B. J. (1990). Self-Regulated Learning and Academic Achievement: An Overview. Educational Psychologist, 25(1), 3–17.
-19.	 Pintrich, P. R. (2004). A Conceptual Framework for Assessing Motivation and Self-Regulated Learning in College Students. Educational
-Psychology Review, 16, 385–407.
-20.	 Deci, E. L., & Ryan, R. M. (2000). The” what” and” why” of goal pursuits: Human needs and the self-determination of behavior. Psychological
-Inquiry, 11(4), 227–268.
-21.	 Pintrich, P. R. (2003). Motivation and Classroom Learning. In Handbook of Psychology. John Wiley & Sons.
-22.	 Doo, M. Y., Bonk, C. J., & Heo, H. (2020). A Meta-Analysis of Scaffolding Effects in Online Learning in Higher Education. In International
-Review of Research in Open and Distributed Learning (Vol. 21).
-23.	 Jumaat, N. F., & Tasir, Z. (2014). Instructional scaffolding in online learning environment: A meta-analysis. Proceedings - 2014 International
-Conference on Teaching and Learning in Computing and Engineering, LATICE 2014, 74–77.
-24.	 Hattie, J., & Timperley, H. (2007). The Power of Feedback. Review of Educational Research, 77(1), 81–112.
-25.	 Wiggins, G. (2012). Seven Keys to Effective Feedback. Feedback for Learning, 70(1), 10–16.
-26.	 Tannenbaum, S. I., & Cerasoli, C. P. (2013). Do team & individual debriefs enhance performance? A meta-analysis. Human Factors,
-55(1), 231–245.
-27.	 Jones, R. J., Woods, S. A., & Guillaume, Y. R. F. (2016). The effectiveness of workplace coaching: A meta-analysis of learning and performance
-outcomes from coaching. Journal of Occupational and Organizational Psychology, 89(2), 249–277.
-28.	 Theeboom, T., Beersma, B., & van Vianen, A. E. M. (2014). Does coaching work? A meta-analysis on the effects of coaching on individual level
-outcomes in an organizational context. Journal of Positive Psychology, 9(1), 1–18.
-29.	 Tabak, I., & Reiser, B. J. (2022). Scaffolding. In The Cambridge Handbook of the Learning Sciences (3rd ed., pp. 53–71). Cambridge Univ Press.
-30.	 Goodyear, P., Jones, C., & Thompson, K. (2014). Computer-Supported Collaborative Learning: Instructional Approaches, Group Processes and
-Educational Designs. In Handbook of Research on Educational Communications and Technology (pp. 439–451).
-31.	 Hattie, J. (2008). Visible learning: A synthesis of over 800 meta-analyses relating to achievement. Routledge.
-32.	 Lieberman, M. D. (2012). Education and the social brain. Trends in Neuroscience and Education, 1(1), 3–9.
-+  Special thanks to Dr. John Sadauskus of Arizona State University for collaborating with General Assembly on the research and formulation of
-this white paper.
-15
 PUTTING REAL SKILLS TO WORK
 GENERAL ASSEMBLY’S LEARNING PHILOSOPHY

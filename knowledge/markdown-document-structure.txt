@@ -9,23 +9,23 @@ Find what you need quickly using the links below to jump to what you need in thi
 
 ## Contents
 
-- [Headings](#headings)
-  - [Casing](#casing)
-- [Lists](#lists)
-- [Callouts](#callouts)
-- [General Markdown Guidelines](#general-markdown-guidelines)
-  - [Relative Paths](#relative-paths)
-  - [Placeholder text](#placeholder-text)
-  - [Spacing](#spacing)
-- [Formatting inline text](#formatting-inline-text)
-  - [Variables or short lines of code](#variables-or-short-lines-of-code)
-  - [Properties or methods](#properties-or-methods)
-  - [Directories, file names, and file paths](#directories-file-names-and-file-paths)
-  - [URLs and URIs](#urls-and-uris)
-  - [Keyboard shortcuts](#keyboard-shortcuts)
-  - [UI Interactions](#ui-interactions)
-  - [Terms and definitions](#terms-and-definitions)
-  - [Adding emphasis](#adding-emphasis)
+- Headings
+  - Casing
+- Lists
+- Callouts
+- General Markdown Guidelines
+  - Relative Paths
+  - Placeholder text
+  - Spacing
+- Formatting inline text
+  - Variables or short lines of code
+  - Properties or methods
+  - Directories, file names, and file paths
+  - URLs and URIs
+  - Keyboard shortcuts
+  - UI Interactions
+  - Terms and definitions
+  - Adding emphasis
 
 ## Headings
 
@@ -51,8 +51,6 @@ Use sentence style casing (capitalize the first letter of a sentence and any pro
 
 You should use a tool like [Capitalize My Title](https://capitalizemytitle.com/style/ap) to format titles in AP Style because the details are frankly silly.
 
-Return to the [top](#contents).
-
 ---
 
 ## Lists
@@ -77,8 +75,6 @@ This is my list of lists:
 - Our list
 
 ```
-
-Return to the [top](#contents).
 
 ---
 
@@ -140,8 +136,6 @@ And another:
 > 💡 Speaking of that, have you bookmarked this page yet?
 ```
 
-Return to the [top](#contents).
-
 ---
 
 ## General Markdown guidelines
@@ -156,15 +150,11 @@ When navigating within a project, use the full relative path. For example, if li
 
 This helps ensure content doesn't break if it is ever ported off of GitHub.
 
-Return to the [top](#contents).
-
 ---
 
 ### Placeholder text
 
 Use the text **tktk** ([common in publishing](https://en.wikipedia.org/wiki/To_come_(publishing))) and a short note as a placeholder for forthcoming work. All documents should be searched for this placeholder before they are published.
-
-Return to the [top](#contents).
 
 ---
 
@@ -173,8 +163,6 @@ Return to the [top](#contents).
 Add a line of whitespace between each markdown element.
 
 Do not use double spaces after punctuation.
-
-Return to the [top](#contents).
 
 ---
 
@@ -193,8 +181,6 @@ The above example is created with this markdown:
 ```markdown
 Create an array named `movies` containing the titles of three of your favorite movies as strings.
 ```
-
-Return to the [top](#contents).
 
 ---
 
@@ -226,8 +212,6 @@ Or use one of the more recent additions to JavaScript - the `at()` method.
 
 Note that there is no `.` before the method name, but it is followed by `()`. We also directly call it a method in the copy. This provides enough context to determine that it is a method.
 
-Return to the [top](#contents).
-
 ---
 
 ### Directories, file names, and file paths
@@ -251,8 +235,6 @@ Then, create an <code class="filepath">app.js</code> and an <code class="filepat
 ```
 
 See the [inline file paths](../component-library/inline-text-components.md#inline-file-paths) documentation for more details on using the *inline file path component*.
-
-Return to the [top](#contents).
 
 ---
 
@@ -284,8 +266,6 @@ In your app, create a `/movies` route.
 
 You typically shouldn't use a URL in copy; use an aliased link where possible. Only write out a full URL as shown above if it makes sense in the context of your work.
 
-Return to the [top](#contents).
-
 ---
 
 ### Keyboard shortcuts
@@ -305,8 +285,6 @@ The above example is created with this markdown:
 ```
 
 See the [inline keyboard keys](../component-library/inline-text-components.md#inline-keyboard-keys) documentation for more details on using the *inline keyboard keys component*.
-
-Return to the [top](#contents).
 
 ---
 
@@ -348,8 +326,6 @@ Enter `0.0.0.0/0` in the **IP Address** field and `Anywhere` in the **Descriptio
 Then click the **Add Entry** button.
 ```
 
-Return to the [top](#contents).
-
 ---
 
 ### Terms and definitions
@@ -368,8 +344,6 @@ Arrays can contain zero or more items called *elements*.
 > 📚 An *element* is an individual item stored at a specific position within an array.
 ```
 
-Return to the [top](#contents).
-
 ---
 
 ### Adding emphasis
@@ -385,7 +359,3 @@ If you click the red button, bad things will happen. ***Do not click the red but
 ```
 
 > Formatting note: Wrap bold text in `**`; for example, `**this text should be bold**`. Wrap italicized text in `*`; for example, `*this text should be italicized*`. Wrap bold and italicized text in `***`; for example, `***this text should be bold and italicized***`.
-
-Return to the [top](#contents).
-
----

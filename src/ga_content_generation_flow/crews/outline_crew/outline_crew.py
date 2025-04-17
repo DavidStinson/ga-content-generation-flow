@@ -8,24 +8,13 @@ from pydantic import BaseModel, Field
 # https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
 
 # Create a text file knowledge source
-text_sources_instructional_architect = TextFileKnowledgeSource(
-    file_paths=["general_assembly_learning_philosophy.txt"]
-)
-
-text_sources_learning_experience_designer = TextFileKnowledgeSource(
-    file_paths=["creating-clear-exercises.txt",
-                "markdown-document-structure.txt", "modular-code.txt",
-                "modular-writing.txt", "technical-voice.txt",
-                "creating-inclusive-and-globally-relevant-content.txt"
-               ]
-)
 
 claude_sonnet = LLM(
     model="claude-3-5-sonnet-20240620",
     max_tokens=8192
 )
 
-openai_o3 = LLM(
+openai_o3mini = LLM(
     model="o3-mini",
     max_tokens=8192,
 )
@@ -70,7 +59,6 @@ class OutlineCrew():
             config=self.agents_config['instructional_architect'],
             verbose=True,
             llm=claude_sonnet,
-            knowledge_sources=[text_sources_instructional_architect],
             cache=False
         )
     
@@ -79,7 +67,7 @@ class OutlineCrew():
         return Agent(
             config=self.agents_config['curriculum_quality_assurance_expert'],
             verbose=True,
-            llm=openai_o3,
+            llm=openai_o3mini,
         )
 
     # To learn more about structured task outputs,

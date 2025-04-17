@@ -11,17 +11,9 @@ chatgpt_41 = LLM(
     max_tokens=16384,
 )
 
-openai_o3 = LLM(
-    model="o3",
+openai_o3mini = LLM(
+    model="o3-mini",
     max_tokens=8192,
-)
-
-text_sources_learning_experience_designer = TextFileKnowledgeSource(
-    file_paths=["creating-clear-exercises.txt",
-                "markdown-document-structure.txt", "modular-code.txt",
-                "modular-writing.txt", "technical-voice.txt",
-                "creating-inclusive-and-globally-relevant-content.txt"
-               ]
 )
 
 @CrewBase
@@ -42,7 +34,6 @@ class LdCrew():
             config=self.agents_config['learning_experience_designer'],
             verbose=True,
             llm=chatgpt_41,
-            knowledge_sources=[text_sources_learning_experience_designer],
             cache=False
         )
     

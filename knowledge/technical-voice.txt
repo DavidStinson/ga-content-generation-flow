@@ -15,7 +15,7 @@ Remember, someone else might present your written content. Allow instructors to 
 
 ## Write inclusively
 
-For guidelines on inclusive writing, refer to the **Inclusivity & Best Practices Guide** in the [General Assembly Brand Guide](https://drive.google.com/file/d/1eldhzkHPyS7T2_NCryMm-IFY1gKsxNYY/view) for general guides on writing inclusively. When writing code, also consult the [Technical Style Guide](./technical-style.md).
+Write inclusively, using globally applicable and relevant examples that would be appropriate to deliver to users sensitive to sexual, violent, race, cultural, political, or national issues.
 
 ## We're in it together
 
