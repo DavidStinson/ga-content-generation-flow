@@ -1,5 +1,5 @@
 {
-  "overview": "In this module, learners will explore how AI can enhance email outreach and automation for sales professionals. The focus will be on addressing common challenges such as time-consuming follow-ups, difficulty in personalizing emails at scale, low response rates due to generic content, and labor-intensive campaign optimization. Through practical applications and hands-on exercises, participants will learn to leverage AI tools to streamline their outreach processes, personalize content effectively, and improve overall campaign performance.",
+  "overview": "This module explores how AI can revolutionize email outreach and automation for sales professionals. Participants will learn to leverage AI tools to solve common challenges such as time-consuming follow-ups, difficulty in personalizing emails at scale, low response rates due to generic content, and labor-intensive email campaign optimization. The module will equip learners with strategies to enhance their email outreach efficiency and effectiveness using AI-powered solutions.",
   "tools": [
     "ChatGPT",
     "Outreach"
@@ -7,28 +7,28 @@
   "learnerPersona": "Salespeople who are responsible for reaching out to potential customers and closing deals. You are looking for a way to automate your outreach and email campaigns to save time and increase efficiency.",
   "prerequisites": [
     "Basic understanding of email marketing principles",
-    "Familiarity with CRM software",
-    "Basic knowledge of sales processes and customer outreach"
+    "Familiarity with customer relationship management (CRM) systems",
+    "Basic knowledge of sales processes and techniques"
   ],
   "qaReasoning": "",
   "microlessons": [
     {
-      "title": "AI-Powered Email Sequences for Prospect Engagement",
-      "slug": "ai-powered-email-sequences",
+      "title": "Leveraging AI for Effective Email Sequences",
+      "slug": "leveraging-ai-for-effective-email-sequences",
       "id": 1,
       "time": 15,
       "learningObjective": "Use effective email sequences and AI to engage prospects",
       "outline": [
-        "Introduction to AI-driven email sequences",
+        "Introduction to AI-powered email sequence creation",
         "Key components of engaging email sequences",
-        "Leveraging AI to optimize email content and timing",
-        "Best practices for crafting AI-assisted follow-up emails",
-        "Hands-on exercise: Creating an AI-powered email sequence using ChatGPT and Outreach"
+        "Using ChatGPT to generate compelling email content",
+        "Integrating AI-generated content with Outreach for sequence automation",
+        "Best practices for AI-enhanced email engagement strategies"
       ]
     },
     {
       "title": "Personalization Variables for Tailored Outreach",
-      "slug": "personalization-variables-tailored-outreach",
+      "slug": "personalization-variables-for-tailored-outreach",
       "id": 2,
       "time": 15,
       "learningObjective": "Apply the right personalization variables (e.g., role, company size, etc.) to create more tailored and relevant outreach",
@@ -36,22 +36,22 @@
         "Understanding the importance of personalization in sales outreach",
         "Identifying key personalization variables (role, company size, industry, pain points)",
         "Techniques for gathering and organizing personalization data",
-        "Implementing personalization variables in email templates",
-        "Practical exercise: Customizing email templates with personalization variables using AI tools"
+        "Using AI to analyze and suggest optimal personalization strategies",
+        "Implementing personalized variables in Outreach campaigns"
       ]
     },
     {
-      "title": "AI-Automated Follow-ups and Campaign Optimization",
-      "slug": "ai-automated-followups-campaign-optimization",
+      "title": "AI-Powered Automated Follow-ups",
+      "slug": "ai-powered-automated-follow-ups",
       "id": 3,
       "time": 10,
       "learningObjective": "Choose variables for personalization (e.g. role, company size, etc.) and use AI to automate the follow-ups",
       "outline": [
-        "Selecting appropriate variables for automated follow-ups",
-        "Setting up AI-driven follow-up sequences",
-        "Utilizing AI for A/B testing and campaign optimization",
-        "Analyzing AI-generated insights to improve response rates",
-        "Demo: Implementing an AI-powered follow-up campaign in Outreach"
+        "Selecting the most effective variables for follow-up personalization",
+        "Designing AI-driven decision trees for follow-up sequences",
+        "Using ChatGPT to generate context-aware follow-up messages",
+        "Setting up automated, personalized follow-ups in Outreach",
+        "Monitoring and optimizing AI-powered follow-up performance"
       ]
     }
   ]

@@ -1,7 +1,6 @@
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
-from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators

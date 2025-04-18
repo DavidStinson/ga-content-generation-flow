@@ -21,7 +21,6 @@ learning_design_task:
     - Learning Objective: {learningObjective}
     - Learner Persona: {learner_persona}
     - Tools: {tools}
-    - Final Format: {final_format}
     You must:
 
     ## Consider the final format

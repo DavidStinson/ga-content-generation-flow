@@ -10,6 +10,7 @@ from crewai.flow import Flow, listen, start
 from ga_content_generation_flow.crews.outline_crew.outline_crew import OutlineCrew
 from ga_content_generation_flow.crews.content_crew.content_crew import ContentCrew
 from ga_content_generation_flow.crews.ld_crew.ld_crew import LdCrew
+from ga_content_generation_flow.crews.slides_crew.slides_crew import SlidesCrew
 
 from ga_content_generation_flow.data import documentation
 
@@ -73,35 +74,41 @@ class ContentGenerationFlow(Flow[ContentState]):
         self.state.microlessons = meta["microlessons"]
 
 
-
         for microlesson in self.state.microlessons:
             microlesson_output = (
                 ContentCrew()
                 .crew()
                 .kickoff(inputs={**self.state.model_dump(), **microlesson})
             )
-
             token_history.append(microlesson_output.token_usage)
 
             self.state.microlessons_text.append(microlesson_output.raw)
             self.state.microlessons[microlesson["id"] - 1]["sme_content"] = microlesson_output.raw
 
-            print(self.state.microlessons[microlesson["id"] - 1])
+        if self.state.final_format != "Slides":
 
-            print("MICROLESSION GENERATED!!!")
+            for microlesson in self.state.microlessons:
+                microlesson_output = (
+                    LdCrew()
+                    .crew()
+                    .kickoff(inputs={**self.state.model_dump(), **microlesson})
+                )
 
-        for microlesson in self.state.microlessons:
-            microlesson_output = (
-                LdCrew()
-                .crew()
-                .kickoff(inputs={**self.state.model_dump(), **microlesson})
-            )
+                token_history.append(microlesson_output.token_usage)
 
-            token_history.append(microlesson_output.token_usage)
+                self.state.microlessons_ld_text.append(microlesson_output.raw)
 
-            self.state.microlessons_ld_text.append(microlesson_output.raw)
+            print(self.state.microlessons_text)
 
-        print(self.state.microlessons_text)
+        if self.state.final_format == "Slides":
+            for microlesson in self.state.microlessons:
+                microlesson_output = (
+                    SlidesCrew()
+                    .crew()
+                    .kickoff(inputs={**self.state.model_dump(), **microlesson})
+                )
+
+                token_history.append(microlesson_output.token_usage)
 
         for item in token_history:
             print(item)

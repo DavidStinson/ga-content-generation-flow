@@ -1,0 +1,93 @@
+create_slide_deck_outline:
+  agent: slide_deck_architect
+  output_file: output/slide-deck-outline-{id}-{slug}.md
+  description: >
+    # Objective
+
+    Transform the expertly crafted lesson content—provided below in Markdown into Markdown that can be used to create a **slide deck** that a visual designer can drop straight into our branded presentation templates. Slides should be content complete, 
+
+    In this task you will use the following information to iterate on the content provided by the subject matter expert:
+
+    ## Input
+
+    This microlesson is a part of the module: {module_title}.
+    The module is about: {module_topic}.
+
+    The microlesson metadata is as follows:
+    - Title: {title}
+    - Time: {time}
+    - Learning Objective: {learningObjective}
+    - Learner Persona: {learner_persona}
+    - Tools: {tools}
+    You must:
+
+    ## Your Task
+
+    ## Segment the lesson into slides.  
+       
+    Use your judgment to pace the material—generally 1 main idea per slide, with natural transition, section-title, recap, and Q&A slides inserted as needed.
+
+    ## For each slide that will contain content, provide the following:
+       
+    - `## The title of the slide` (H2, ≤ 65 characters, sentence case)
+    - Slide content. This could include:
+      - Short bullet list of key points (≤ 7 bullets, ≤ 10 words each).
+      - A table with content (≤ 4 columns)
+      - A series of short paragraphs
+      - A short paragraph followed by a short bullet list (≤ 4 bullets, ≤ 10 words each)
+      - Side-by-side comparison of two concepts (for example: "Before / After"")
+      - Optional **inline code snippet** (≤ 15 lines, fenced with language tag) if it tightens understanding.
+    - A blank line, then the speaker-notes block using the exact template:
+      PURPOSE:
+      TALKING POINTS
+      • First talking point
+      • Second talking point
+      • Third talking point
+      TEACHING TIPS
+      • First teaching tip
+      • Second teaching tip 
+
+    ## Universal slide-craft rules
+  
+    - Maintain clear visual hierarchy (H1 for section openers, H2 for slide titles).
+    - Adapt tone and framing to the learner persona.  
+    - Embed *only* succinct code snippets on-slide; push longer code to notes.
+
+    ## Separate every slide with a Markdown horizontal rule `---`
+    
+    Number each slide sequentially as `**Slide N**` on the first line of each slide block for easy reference.
+
+    ## **Do NOT** wrap the final output in triple-backtick fences
+    
+    Do not include reflection questions, knowledge checks, or closings ("next
+    steps," "congratulations," etc.).
+
+    ## The SME has created the below content for this microlesson
+        
+    You must use this content as a starting point and build upon it. The SME has created the below content for this microlesson. The content is fenced off with XML tags.
+
+    <sme_content>
+    {sme_content}
+    </sme_content>
+
+  expected_output: >
+    A Markdown document (no code-block fences) that contains the complete
+    slide-deck outline.
+
+    **Structure requirements:**
+
+    - Each slide begins with the slide title: `## slide_title`
+    - The purpose of the slide (slide content, transition, recap, Q&A, section-title)
+    - Follow with the slide content. This is the complete content that will be added to the slide - be sure to include all important information. Remember for content slides, this could be:
+      - Short bullet list of key points (≤ 7 bullets, ≤ 10 words each).
+      - A table with content (≤ 4 columns)
+      - A series of short paragraphs
+      - A short paragraph followed by a short bullet list (≤ 4 bullets, ≤ 10 words each)
+      - Side-by-side comparison of two concepts (for example: "Before / After"")
+      - Optional **inline code snippet** (≤ 15 lines, fenced with language tag) if it tightens understanding.
+    - Blank line, then the speaker-notes block using the template described above.  
+    - Conclude the slide with a horizontal rule `---` (omit after final slide).
+
+    The final file must be ready for designers to apply the appropriate branded
+    template, ensuring the content is clear, correctly paced, on-brand, and
+    wholly aligned with the lesson's learning objective and audience persona.
