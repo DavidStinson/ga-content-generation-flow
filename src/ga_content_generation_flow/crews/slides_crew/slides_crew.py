@@ -33,7 +33,7 @@ class SlidesCrew():
         return Agent(
             config=self.agents_config['slide_deck_architect'],
             verbose=True,
-            llm=openai_o3mini,
+            llm=chatgpt_41,
             cache=False
         )
 

@@ -17,28 +17,28 @@ from ga_content_generation_flow.data import documentation
 token_history = []
 
 class ContentState(BaseModel):
-    # module_title: str = "Introduction to Javascript Arrays"
-    # module_topic: str = "This JavaScript Arrays module is designed to provide a comprehensive introduction to arrays, a fundamental list datatype in programming. The module concludes with an extended practical exercise where learners will create, modify, and iterate through an array of strings. This content is suitable for beginners who are relatively new to JavaScript programming."
-    # learner_persona: str = "Little to no prior coding experience; basic computer literacy is assumed. Students are adult learners and aspiring professionals."
-    # learning_objectives: list[str] = [
-    #     "Define JavaScript arrays and explain how they organize data.\n",
-    #     "Identify the components of an array, including its elements and index positions.\n",
-    #     "Create arrays using JavaScript literal notation.\n",
-    #     "Access and modify elements within an array using square brackets.\n",
-    #     "Use basic array methods, such as push() and pop(), to manage array data.\n"
-    # ]
-    # tools: str = "Visual Studio Code"
-
-    module_title: str = "OUTREACH AND EMAIL AUTOMATION WITH AI"
-    module_topic: str = "In this module you will explore how AI can support solving for time-consuming follow-ups, difficulty in personalizing emails at scale, low response rates due to generic content, testing and optimizing email campaigns can be labor intensive."
-    learner_persona: str = "Salespeople who are responsible for reaching out to potential customers and closing deals. You are looking for a way to automate your outreach and email campaigns to save time and increase efficiency."
+    module_title: str = "Introduction to Javascript Arrays"
+    module_topic: str = "This JavaScript Arrays module is designed to provide a comprehensive introduction to arrays, a fundamental list datatype in programming. The module concludes with an extended practical exercise where learners will create, modify, and iterate through an array of strings. This content is suitable for beginners who are relatively new to JavaScript programming."
+    learner_persona: str = "Little to no prior coding experience; basic computer literacy is assumed. Students are adult learners and aspiring professionals."
     learning_objectives: list[str] = [
-        "Use effective email sequences and AI to engage prospects\n",
-        "Apply the right personalization variables (e.g., role, company size, etc.) to create more tailored and relevant outreach\n",
-        "Choose variables for personalization (e.g. role, company size, etc.) and use AI to automate the follow-ups\n",
+        "Define JavaScript arrays and explain how they organize data.\n",
+        "Identify the components of an array, including its elements and index positions.\n",
+        "Create arrays using JavaScript literal notation.\n",
+        "Access and modify elements within an array using square brackets.\n",
+        "Use basic array methods, such as push() and pop(), to manage array data.\n"
     ]
-    tools: str = "ChatGPT, Outreach"
-    module_minutes: int = 40
+    tools: str = "Visual Studio Code"
+
+    # module_title: str = "OUTREACH AND EMAIL AUTOMATION WITH AI"
+    # module_topic: str = "In this module you will explore how AI can support solving for time-consuming follow-ups, difficulty in personalizing emails at scale, low response rates due to generic content, testing and optimizing email campaigns can be labor intensive."
+    # learner_persona: str = "Salespeople who are responsible for reaching out to potential customers and closing deals. You are looking for a way to automate your outreach and email campaigns to save time and increase efficiency."
+    # learning_objectives: list[str] = [
+    #     "Use effective email sequences and AI to engage prospects\n",
+    #     "Apply the right personalization variables (e.g., role, company size, etc.) to create more tailored and relevant outreach\n",
+    #     "Choose variables for personalization (e.g. role, company size, etc.) and use AI to automate the follow-ups\n",
+    # ]
+    # tools: str = "ChatGPT, Outreach"
+    module_minutes: int = 90
     final_format: str = "Slides"
     microlessons: list[str] = []
     microlessons_text: list[str] = []

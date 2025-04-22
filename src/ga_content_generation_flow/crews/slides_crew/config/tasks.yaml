@@ -40,12 +40,15 @@ create_slide_deck_outline:
     - A blank line, then the speaker-notes block using the exact template:
       PURPOSE:
       TALKING POINTS
-      • First talking point
-      • Second talking point
-      • Third talking point
+
+      - First talking point
+      - Second talking point
+      - Third talking point
+
       TEACHING TIPS
-      • First teaching tip
-      • Second teaching tip 
+      
+      - First teaching tip
+      - Second teaching tip 
 
     ## Universal slide-craft rules
   
