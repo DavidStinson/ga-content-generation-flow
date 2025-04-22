@@ -5,7 +5,6 @@
 
 - SME Agent
 - LED Agent
-- 
 
 ## Tasks
 
