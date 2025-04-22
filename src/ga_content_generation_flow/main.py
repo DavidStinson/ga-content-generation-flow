@@ -34,6 +34,17 @@ class ContentState(BaseModel):
 
     tools: str = "Visual Studio Code"
 
+
+
+
+
+
+
+
+
+
+
+
     final_format: str = "markdown"
 
 
