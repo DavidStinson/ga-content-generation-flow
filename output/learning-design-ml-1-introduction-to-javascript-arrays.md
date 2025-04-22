@@ -2,8 +2,6 @@
 
 **Learning Objective:** Define JavaScript arrays and explain how they organize data.
 
-
-
 ## What is an array in JavaScript?
 
 Arrays are a fundamental tool in programming for organizing information. In JavaScript, an array is a special type of variable designed to hold a list of *elements*—which are simply individual values, like names or numbers.
@@ -13,8 +11,6 @@ Arrays are a fundamental tool in programming for organizing information. In Java
 Imagine a row of cubbyholes or small storage boxes found in many offices or schools. Each slot can hold a single item, but keeping them together lets you organize a group—say, office supplies or classroom tools—in a single structure. In programming, arrays serve a similar role: rather than tracking each data point with a separate variable, you keep all related items together in one place.
 
 Arrays can hold different types of data, such as names, numbers, or even other arrays, but they are most useful when you need to manage a collection of similar items.
-
-
 
 ### Creating your first array
 
@@ -30,8 +26,6 @@ In this line, the variable `colors` holds an array of three color names.
 
 tktk asset: Visual showing an open "container" with labeled boxes inside, each representing one array element (e.g., "red", "green", "blue").
 
-
-
 ## Why use arrays: Purpose and benefits
 
 Arrays are more than just a way to store lists—they make handling data much more efficient. Here’s why arrays matter in real-world programming and projects:
@@ -44,8 +38,6 @@ Arrays are more than just a way to store lists—they make handling data much mo
 > 🏆 Best practice: When you find yourself creating several variables for similar data, consider whether using an array would make your code easier to manage.
 
 tktk asset: Simple chart comparing individual variables (e.g., `name1`, `name2`, `name3`) with a single array (`names = [...]`).
-
-
 
 ## Real-world examples of array usage
 
@@ -65,8 +57,6 @@ let todoList = ['Send emails', 'Attend meeting', 'Review report', 'Plan tomorrow
 > 💡 Imagine an array as your digital checklist—always tidy, easy to update, and able to handle whatever comes next.
 
 tktk asset: Illustrative example showing a digital to-do app with a four-item list, each item corresponding to one array element.
-
-
 
 ## How arrays organize and store data
 
@@ -112,8 +102,6 @@ for (let i = 0; i < colors.length; i++) {
 ```
 
 > 💡 This approach makes your code flexible. As your array grows, you don’t have to change your logic—the `for` loop will always handle all items.
-
-
 
 ## Activity: Build your own favorite foods array
 
@@ -180,8 +168,6 @@ Why do you think using an array is more effective for group data than creating a
 
 tktk asset: Example code snippet solution with placeholder variable names (such as diverse food examples).
 
-
-
 ## Knowledge check
 
 **Question 1:**  
@@ -199,8 +185,6 @@ Which JavaScript method adds a new element to the end of an array?
 - B) `addToEnd()`
 - C) `push()`
 - D) `insert()`
-
-
 
 ## Instructor guide
 

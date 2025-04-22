@@ -2,8 +2,6 @@
 
 **Learning Objective:** Identify the components of an array, including its elements and index positions.
 
-
-
 ## Array elements: Definition and characteristics
 
 Arrays help us organize a group of related items—such as data or information—into a single, ordered list. Each item in this list is called an *element*.
@@ -30,8 +28,6 @@ In this example:
 - Each element is accessed based on its position in the array.
 
 tktk asset: Visual showing a shelf with labeled compartments, each holding a different colored book (representing array elements in order).
-
-
 
 ## Index positions: The zero-based numbering system
 
@@ -69,8 +65,6 @@ console.log(colors[1]);
 ```
 
 tktk asset: Illustrative diagram comparing a list that counts from one (like a list of steps) to an array that starts at zero, using corresponding boxes beneath the elements.
-
-
 
 ## Array length and its significance
 

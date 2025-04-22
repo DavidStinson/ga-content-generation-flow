@@ -343,7 +343,7 @@ Don’t default to U.S.-centric examples.
 """
 
 exercise_instruction_guidelines = """
- Exercise Instruction Guidelines
+#Exercise Instruction Guidelines
 
 > **Golden Rule:**  
 > **"Don't make me think."**  
