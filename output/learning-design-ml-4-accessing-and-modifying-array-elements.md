@@ -2,8 +2,6 @@
 
 **Learning Objective:** Access and modify elements within an array using square brackets.
 
-
-
 ## Using square bracket notation to access elements
 
 In earlier microlessons, we explored the basics of JavaScript arrays and how to create them. Now, let’s build on that foundation by learning how to access and modify values stored inside an array.
@@ -28,8 +26,6 @@ tktk asset: Visual of a row of numbered mailboxes or storage bins (numbered 0, 1
 
 > ⚠ Arrays in JavaScript always begin with index 0; double-check your position when accessing elements!
 
-
-
 ## Modifying existing array elements
 
 Arrays are not just storage—they are flexible collections. You can update any element at a given index.
@@ -46,8 +42,6 @@ In this code, we update the element at index 1 (the second item) from `'banana'`
 > 💡 Just as you might relabel or swap an item in an organizer, you can update any slot in your array with a new value—no need to rewrite the whole list.
 
 tktk asset: Animated GIF or illustration showing swapping a label on a box or organizer to a new label (“banana” swapped to “blueberry”).
-
-
 
 ## Common pitfalls when accessing and modifying elements
 
@@ -74,8 +68,6 @@ While array access is straightforward, it is also easy to make mistakes. Let’s
 > ⚠ Double-check your intended index, especially when updating values—off-by-one errors are very common for new programmers.
 
 tktk asset: Simple “before and after” array diagram showing what happens when assigning to an index beyond the current last element—a gap appears.
-
-
 
 ## Practical examples of element manipulation
 
@@ -115,8 +107,6 @@ console.log(cart[cart.length - 1]); // Prints: Charger
 
 tktk asset: Callout graphic showing an online shopping cart with a visual of both the first and last items highlighted.
 
-
-
 ## Activity: Practice with accessing and modifying array elements
 
 ### Purpose
@@ -132,6 +122,7 @@ Applying what you’ve learned solidifies your understanding of how to access an
      ```javascript
      let favoriteBooks = ['1984', 'Dune', 'Matilda', 'Pride and Prejudice'];
      ```
+
 3. **Print the whole array to confirm it is set up.**
 4. **Access and print the second and fourth books with their index positions.**
 5. **Update the third book to another title (preferably one you have read or want to read).**
@@ -143,13 +134,9 @@ Applying what you’ve learned solidifies your understanding of how to access an
 
 tktk asset: Screenshot of Visual Studio Code or online editor showing correctly formatted output and comments.
 
-
-
 ## Discussion prompt
 
 Indexes are essential when working with JavaScript arrays. Think of a real-life scenario—correcting a name in a class roster, updating a checklist, or changing an item in a menu. What could go wrong if you change the wrong spot? Share an example scenario with your group and discuss how you might prevent or catch such mistakes in your code.
-
-
 
 ## Knowledge checks
 
@@ -168,8 +155,6 @@ What will happen if you try to print `colors[10]` when `colors` contains only fi
 - B) It prints `'undefined'`.
 - C) It prints an error message.
 - D) It prints all colors up to index 10.
-
-
 
 ## Instructor guide
 
@@ -204,8 +189,6 @@ console.log(favoriteBooks[10]); // Prints: undefined
 ```
 
 > 💡 Reinforce the zero-based indexing and dynamic updating process to help learners internalize the access and modification pattern.
-
-
 
 ## Reasoning for Changes
 

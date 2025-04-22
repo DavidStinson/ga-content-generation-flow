@@ -2,8 +2,6 @@
 
 **Learning Objective:** Create arrays using JavaScript literal notation.
 
-
-
 ## Syntax for array literal notation
 
 So far, you’ve learned that arrays are like organizers for groups of information, similar to a row of cubbyholes or storage boxes—each box holds an item, all together in one neat row.
@@ -24,11 +22,7 @@ Let’s break this down step by step:
 
 > 📚 An *element* is an individual item stored at a specific position in an array.
 
-> 💡 Using array literal notation helps you see all your data in one place, making it simple to create both small and large lists.
-
 tktk asset: Visual showing a row of labeled boxes, each representing an array element inside square brackets.
-
-
 
 ### Key points to remember
 
@@ -73,8 +67,6 @@ let personDetails = ['Amira', 29, false];
 
 tktk asset: Diagram showing side-by-side arrays with numbers, strings, and a mixed array, highlighting the different element types.
 
-
-
 ## Empty arrays and their uses
 
 Often when building programs, you might not know every item your array should hold right away. You might need to collect data from users, or grow a list over time as your program runs.
@@ -106,8 +98,6 @@ console.log(numbers);
 - Tracking items added to a shopping cart
 
 tktk asset: Side-by-side code-to-concept visual showing an empty array that grows as elements are added via `.push()`.
-
-
 
 ## Practical examples of array creation
 
@@ -144,8 +134,6 @@ console.log(responses);
 > 💡 Arrays, especially those created with literal notation, are your digital notepads—flexible, organized, and always ready for new data.
 
 tktk asset: Three simple scenario cards (to-do, movies, survey) with matching code snippets and real-life visuals.
-
-
 
 ## Activity: Hands-on with array literal notation
 
@@ -209,15 +197,11 @@ Practice creating arrays using literal notation, adding to arrays, and connectin
 
 > 🏆 Best practice: Use personal and diverse examples for your arrays, reflecting interests, backgrounds, or places that inspire you.
 
-
-
 ## Discussion prompt
 
 When would you want to start with an empty array rather than one filled with items? Share ways an empty array is useful for a real-world application you use or would like to create—for example, trip planning, a shopping cart for online purchases, or storing responses to a quiz. Share your thoughts with your group and discuss how empty arrays make programs more adaptable and user-friendly.
 
 tktk asset: Discussion forum screenshot or sample group discussion slide with “When and why to use empty arrays?” at the top.
-
-
 
 ## Knowledge checks
 
@@ -243,8 +227,6 @@ console.log(responses);
 - B) `'Yes', 'No'`
 - C) `[[], ['Yes', 'No']]`
 - D) `['No', 'Yes']`
-
-
 
 ## Instructor guide
 

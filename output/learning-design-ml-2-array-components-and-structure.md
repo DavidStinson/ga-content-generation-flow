@@ -53,7 +53,7 @@ let colors = ['red', 'green', 'blue'];
 - The second element is at index `1`: `colors[1]`
 - The third element is at index `2`: `colors[2]`
 
-While starting at zero may seem unusual, it's a common approach in many programming languages. 
+While starting at zero may seem unusual, it's a common approach in many programming languages.
 
 > 💡 A helpful way to remember: Just like elevators in some buildings start their numbering at "0" for the ground floor, arrays start at index `0` for the first element.
 
@@ -88,15 +88,13 @@ Important things to note:
 
 tktk asset: Diagram using a row of boxes, showing how length relates to indices (highlighting that an array of length 4 has indices 0, 1, 2, and 3).
 
-
-
 ## Visualizing array structure
 
 Let’s create a mental image of how arrays organize information.
 
 Picture an array as a row of labeled containers, each holding an item and marked with an index underneath:
 
-```
+```plaintext
 +-------+-------+-------+-------+
 | 'cat' | 'bat' | 'fish'| 'ant'|
 +---0---+---1---+---2---+---3--+
@@ -120,8 +118,6 @@ let animals = ['cat', 'bat', 'fish', 'ant'];
 > 💡 When you need to find or update a specific entry, think: find the correct container using its index, and you have direct access to that element.
 
 tktk asset: Side-by-side visual of the labeled container concept, with matching code comments showing each index and element.
-
-
 
 ## Activity: Exploring array components hands-on
 
@@ -189,13 +185,9 @@ Practice how individual array elements, index positions, and length work togethe
 
    tktk asset: Example code snippet showing the process and the output in a code editor window.
 
-
-
 ## Discussion prompt
 
 JavaScript arrays begin counting with zero. Explain to a friend who is not familiar with code why starting at zero might be confusing, and what mental tricks or analogies could make this easier to remember. Feel free to share a real-world analogy or memory tip with your group.
-
-
 
 ## Knowledge check
 
@@ -215,8 +207,6 @@ If an array's length is 5, what is the index of its last element?
 - C) 6  
 - D) 0
 
-
-
 ---
 
 ## Instructor guide
@@ -224,7 +214,7 @@ If an array's length is 5, what is the index of its last element?
 **Delivery tips:**
 
 - Encourage learners to use personally relevant and varied examples for arrays, helping material feel globally accessible.
-- When introducing zero-based indexing, reinforce with relatable, clear visuals—such as diagrams or the ground-floor elevator analogy. 
+- When introducing zero-based indexing, reinforce with relatable, clear visuals—such as diagrams or the ground-floor elevator analogy.
 - For the activity, prompt learners to include hobbies, interests, or activities that reflect their own experiences and cultures.
 - Provide learners opportunities to share their arrays or discuss the zero-based counting concept, fostering a collaborative and supportive environment.
 
