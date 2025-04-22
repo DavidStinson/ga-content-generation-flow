@@ -25,16 +25,19 @@ class ContentState(BaseModel):
     learner_persona: str = "Little to no prior coding experience; basic computer literacy is assumed. Students are adult learners and aspiring professionals."
 
     learning_objectives: list[str] = [
-        "Define JavaScript arrays and explain how they organize data.\n",
-        "Identify the components of an array, including its elements and index positions.\n",
-        "Create arrays using JavaScript literal notation.\n",
-        "Access and modify elements within an array using square brackets.\n",
-        "Use basic array methods, such as push() and pop(), to manage array data.\n"
+        "Define JavaScript arrays and explain how they organize data.",
+        "Identify the components of an array, including its elements and index positions.",
+        "Create arrays using JavaScript literal notation.",
+        "Access and modify elements within an array using square brackets.",
+        "Use basic array methods, such as push() and pop(), to manage array data."
     ]
 
     tools: str = "Visual Studio Code"
 
     final_format: str = "markdown"
+
+
+
 
 
 
