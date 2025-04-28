@@ -105,7 +105,7 @@ class ContentGenerationFlow(Flow[ContentState]):
                         if microlesson["id"] >= numOfPreviousMicrolessons:
                             break
 
-                        microlesson["microlessons_text"] = f"{microlesson["microlessons_text"]} {microlesson['sme_content']}"
+                        microlesson["microlessons_text"] = f"{microlesson["microlessons_text"]} {microlesson['led_content']}"
 
                 microlesson_output = (
                     LdCrew()
@@ -138,7 +138,7 @@ class ContentGenerationFlow(Flow[ContentState]):
 def kickoff():
     content_generation_flow = ContentGenerationFlow()
     microlessons = content_generation_flow.kickoff()
-    print("KICKOFF RESULT:", microlessons)
+    return microlessons
 
 def plot():
     content_generation_flow = ContentGenerationFlow()
