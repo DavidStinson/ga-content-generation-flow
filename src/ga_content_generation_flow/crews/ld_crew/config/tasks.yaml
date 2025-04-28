@@ -98,9 +98,9 @@ learning_design_task:
 
     Here is your previous work on the content from the previous microlessons fenced off with XML tags:
 
-    <microlessons_ld_text>
-    {microlessons_ld_text}
-    </microlessons_ld_text>
+    <microlessons_text>
+    {microlessons_text}
+    </microlessons_text>
 
     ## Context
 

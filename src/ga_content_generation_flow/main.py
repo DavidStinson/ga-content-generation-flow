@@ -34,29 +34,7 @@ class ContentState(BaseModel):
 
     tools: str = "Visual Studio Code"
 
-
-
-
-
-
-
-
-
-
-
-
     final_format: str = "markdown"
-
-
-
-
-
-
-
-
-
-
-
 
     doc_technical_voice: str = documentation["technical_voice"]
 
@@ -72,17 +50,10 @@ class ContentState(BaseModel):
 
     doc_writing_modularly: str = documentation["writing_modularly"]
 
-
-    microlessons: list[str] = []
-    microlessons_text: list[str] = []
-    microlessons_ld_text: list[str] = []
+    microlessons: list[dict] = []
 
 class ContentGenerationFlow(Flow[ContentState]):
     @start()
-    def generate_content(self):
-        print("Generating content")
-
-    @listen(generate_content)
     def generate_outline(self):
         print(self.state.module_title)
         print("Generating content outline")
@@ -99,30 +70,55 @@ class ContentGenerationFlow(Flow[ContentState]):
         self.state.microlessons = meta["microlessons"]
 
         for microlesson in self.state.microlessons:
+            microlesson["microlessons_text"] = "blah"
+            if microlesson["id"] > 1:
+                numOfPreviousMicrolessons = microlesson["id"] - 1
+
+                for microlesson in self.state.microlessons:
+                    if microlesson["id"] >= numOfPreviousMicrolessons:
+                        break
+
+                    microlesson["microlessons_text"] = f"{microlesson["microlessons_text"]} {microlesson['sme_content']}"
+            
+            print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
+
             microlesson_output = (
                 ContentCrew()
                 .crew()
-                .kickoff(inputs={**self.state.model_dump(), **microlesson})
+                .kickoff(inputs={
+                    **self.state.model_dump(),
+                    **microlesson
+                })
             )
             token_history.append(microlesson_output.token_usage)
 
-            self.state.microlessons_text.append(microlesson_output.raw)
             self.state.microlessons[microlesson["id"] - 1]["sme_content"] = microlesson_output.raw
 
         if self.state.final_format != "Slides":
 
             for microlesson in self.state.microlessons:
+                microlesson["microlessons_text"] = "blah"
+                if microlesson["id"] > 1:
+                    numOfPreviousMicrolessons = microlesson["id"] - 1
+
+                    for microlesson in self.state.microlessons:
+                        if microlesson["id"] >= numOfPreviousMicrolessons:
+                            break
+
+                        microlesson["microlessons_text"] = f"{microlesson["microlessons_text"]} {microlesson['sme_content']}"
+
                 microlesson_output = (
                     LdCrew()
                     .crew()
-                    .kickoff(inputs={**self.state.model_dump(), **microlesson})
+                    .kickoff(inputs={
+                        **self.state.model_dump(),
+                        **microlesson
+                    })
                 )
 
+                self.state.microlessons[microlesson["id"] - 1]["led_content"] = microlesson_output.raw
+
                 token_history.append(microlesson_output.token_usage)
-
-                self.state.microlessons_ld_text.append(microlesson_output.raw)
-
-            print(self.state.microlessons_text)
 
         if self.state.final_format == "Slides":
             for microlesson in self.state.microlessons:
@@ -137,10 +133,12 @@ class ContentGenerationFlow(Flow[ContentState]):
         for item in token_history:
             print(item)
 
+        return self.state.microlessons
+
 def kickoff():
     content_generation_flow = ContentGenerationFlow()
-    content_generation_flow.kickoff()
-
+    microlessons = content_generation_flow.kickoff()
+    print("KICKOFF RESULT:", microlessons)
 
 def plot():
     content_generation_flow = ContentGenerationFlow()

@@ -15,6 +15,10 @@ chatgpt_41 = LLM(
     max_tokens=8192,
 )
 
+# this doesn't work yet but should be added to the prompt
+
+
+
 @CrewBase
 class ContentCrew():
     """ContentCrew crew"""

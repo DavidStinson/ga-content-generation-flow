@@ -192,7 +192,7 @@ General Assembly is a global talent and upskilling community. Since 2011, we’v
 
 As part of the Adecco Group and LHH, we help match talent to business needs.
 
-**All day, every day: We put real skills to work.**  
+**All day, every day: We put real skills to work.**
 """
 
 ga_inclusivity_guidelines = """
@@ -343,7 +343,7 @@ Don’t default to U.S.-centric examples.
 """
 
 exercise_instruction_guidelines = """
-#Exercise Instruction Guidelines
+# Exercise Instruction Guidelines
 
 > **Golden Rule:**  
 > **"Don't make me think."**  

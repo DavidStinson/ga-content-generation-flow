@@ -4,16 +4,9 @@ generate_module_outline:
   description: >
     # Objectives
 
-    As the Senior Instructional Architect, your primary task is to generate a 
-    detailed module outline for a technical (with coding) or non-technical 
-    module. This includes creating sections for the instructor overview and 
-    agenda, learner persona and prerequisites, and individual microlesson
-    structures (title, learning objective, and an overview of the microlesson's 
-    content).
+    As the Senior Instructional Architect, your primary task is to generate a detailed module outline for a technical (with coding) or non-technical module. This includes creating sections for the instructor overview and agenda, learner persona and prerequisites, and individual microlesson structures (title, learning objective, and an overview of the microlesson's content).
 
-    Your process should involve the following steps, informed by the provided 
-    module topic, learner persona, how many minutes the module is,and learning 
-    objectives as follows:
+    Your process should involve the following steps, informed by the provided module topic, learner persona, how many minutes the module is, and learning objectives as follows:
 
     The module topic is: {module_topic} 
     
@@ -44,7 +37,7 @@ generate_module_outline:
     - Create a concise title.
     - Outline key theoretical concepts to be introduced.
     - Include a method for learners to check their understanding (e.g., a multiple-choice question, coding prompt, or reflection).
-    - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping {learner_persona} in mind, including time for guided practice and learner interaction.
+    - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
 
     ## Populate the Outline with Clear, Industry-Relevant Content:
         
@@ -54,7 +47,7 @@ generate_module_outline:
     - Drawn from current industry practices, tools, and knowledge.
     - Selected to build progressively toward the overall module goal.
     - Use descriptive subsection names that reflect the actual content (e.g., “Model Evaluation Metrics” or “Using Git Branches”), rather than generic structural labels like "Theory".
-    - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping {learner_persona} in mind, including time for guided practice and learner interaction.
+    - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
     - Ensure each microlesson balances conceptual understanding and practical application, tied clearly to industry-relevant skills and tasks.
     - When creating the microlesson outline, make sure you're taking the duration of the microlesson into account. 
 
@@ -79,10 +72,10 @@ generate_module_outline:
     A comprehensive module outline in JSON format, structured according to 
     the following:
 
-    - `overview`: A brief summary of the module's purpose and structure (generated based on {module_topic}).
-    - `tools`: List of necessary software as defined in {tools}.
-    - `learnerPersona`: A description of the target audience (using the provided {learner_persona}).
-    - `prerequisites`: A list of required skills or knowledge (based on {module_topic} and {learner_persona}).
+    - `overview`: A brief summary of the module's purpose and structure (generated based on the provided module topic).
+    - `tools`: List of necessary software as defined in by tools.
+    - `learnerPersona`: A description of the target audience (using the provided learner persona).
+    - `prerequisites`: A list of required skills or knowledge (based on  module topic and learner persona).
     - `qaReasoning`: An empty string. 
     - Microlessons array:
       - For each microlesson:
@@ -90,7 +83,7 @@ generate_module_outline:
         - `slug`: Include a slug for the microlesson, generated from the title.
         - `id`: Include an id for the microlesson, starting at 1 and incrementing by 1 for each microlesson.
         - `time`: Include the estimated time it will take to complete the microlesson in minutes.
-        - `learningObjective`: The exact learning objective for the microlesson as provided in the {learning_objectives}.
+        - `learningObjective`: The exact learning objective for the microlesson as provided in the learning_objectives.
         - `outline`: A brief outline of the key concepts that will be covered in the microlesson.
 
 module_outline_qa:
