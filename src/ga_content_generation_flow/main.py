@@ -158,8 +158,8 @@ class ContentGenerationFlow(Flow[ContentState]):
 
 def kickoff():
     content_generation_flow = ContentGenerationFlow()
-    microlessons = content_generation_flow.kickoff()
-    return microlessons
+    content_generation_flow.kickoff()
+
 
 def plot():
     content_generation_flow = ContentGenerationFlow()
@@ -168,14 +168,3 @@ def plot():
 
 if __name__ == "__main__":
     kickoff()
-
-
-    # module_title: str = "OUTREACH AND EMAIL AUTOMATION WITH AI"
-    # module_topic: str = "In this module you will explore how AI can support solving for time-consuming follow-ups, difficulty in personalizing emails at scale, low response rates due to generic content, testing and optimizing email campaigns can be labor intensive."
-    # learner_persona: str = "Salespeople who are responsible for reaching out to potential customers and closing deals. You are looking for a way to automate your outreach and email campaigns to save time and increase efficiency."
-    # learning_objectives: list[str] = [
-    #     "Use effective email sequences and AI to engage prospects\n",
-    #     "Apply the right personalization variables (e.g., role, company size, etc.) to create more tailored and relevant outreach\n",
-    #     "Choose variables for personalization (e.g. role, company size, etc.) and use AI to automate the follow-ups\n",
-    # ]
-    # tools: str = "ChatGPT, Outreach"
