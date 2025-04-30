@@ -1,83 +1,83 @@
 {
-  "overview": "This 90-minute module introduces JavaScript arrays, a fundamental data structure in programming. Designed for beginners with little to no coding experience, it covers array creation, element access and modification, and basic array methods. The module concludes with a practical exercise to reinforce learning.",
+  "overview": "This module introduces HR professionals to AI and generative AI tools, focusing on their applications in HR. Participants will learn about different types of AI, explore HR-specific AI tools, understand ethical considerations, and gain insights into large language models like ChatGPT.",
   "tools": [
-    "Visual Studio Code"
+    "Webinar platform",
+    "Worksheet for participants"
   ],
-  "learnerPersona": "Adult learners and aspiring professionals with little to no prior coding experience, but possessing basic computer literacy.",
+  "learnerPersona": "HR professionals seeking to leverage AI for work automation and efficiency improvement",
   "prerequisites": [
-    "Basic computer literacy",
-    "Familiarity with JavaScript variables and data types"
+    "Basic understanding of HR processes",
+    "Familiarity with digital tools in HR"
   ],
   "qaReasoning": "",
   "microlessons": [
     {
-      "title": "Understanding JavaScript Arrays",
-      "slug": "understanding-javascript-arrays",
+      "title": "Understanding AI in HR",
+      "slug": "understanding-ai-in-hr",
       "id": 1,
-      "time": 20,
-      "learningObjective": "Define JavaScript arrays and explain how they organize data.",
+      "time": 15,
+      "learningObjective": "Differentiate between different types of AI in the HR space.",
       "outline": [
-        "Introduction to arrays as ordered lists of data",
-        "Real-world analogies for arrays (e.g., shopping lists, playlists)",
-        "Advantages of using arrays in programming",
-        "Demonstration: Creating a simple array in Visual Studio Code",
-        "Activity: Identifying array use cases in everyday scenarios"
+        "Introduction to AI and its relevance in HR",
+        "Types of AI: Machine Learning, Natural Language Processing, Computer Vision",
+        "Examples of each AI type in HR contexts",
+        "Brief discussion on AI's potential impact on HR roles"
       ]
     },
     {
-      "title": "Array Structure and Components",
-      "slug": "array-structure-and-components",
+      "title": "HR-Specific AI Tools and Use Cases",
+      "slug": "hr-specific-ai-tools-and-use-cases",
       "id": 2,
       "time": 15,
-      "learningObjective": "Identify the components of an array, including its elements and index positions.",
+      "learningObjective": "Describe the use cases and capabilities of HR-specific AI tools.",
       "outline": [
-        "Array elements: Definition and examples",
-        "Index positions: Zero-based numbering system",
-        "Array length and its significance",
-        "Demonstration: Examining array structure in Visual Studio Code",
-        "Activity: Mapping out the structure of a given array"
+        "Overview of AI tools in recruitment (e.g., resume screening, chatbots)",
+        "AI in employee onboarding and training",
+        "Performance management and predictive analytics tools",
+        "AI for employee engagement and retention",
+        "Case studies of successful AI implementation in HR"
       ]
     },
     {
-      "title": "Creating Arrays with Literal Notation",
-      "slug": "creating-arrays-with-literal-notation",
+      "title": "Ethical Considerations in AI for HR",
+      "slug": "ethical-considerations-in-ai-for-hr",
       "id": 3,
-      "time": 20,
-      "learningObjective": "Create arrays using JavaScript literal notation.",
+      "time": 10,
+      "learningObjective": "Recognize key ethical risks associated with using AI in HR, including bias, transparency, and accountability.",
       "outline": [
-        "Introduction to array literal notation syntax",
-        "Creating arrays with different data types",
-        "Empty arrays and their uses",
-        "Demonstration: Creating various arrays in Visual Studio Code",
-        "Guided practice: Creating arrays based on real-world scenarios"
+        "Introduction to AI ethics in HR",
+        "Bias in AI: sources and implications",
+        "Transparency and explainability of AI decisions",
+        "Accountability and human oversight in AI-driven processes",
+        "Best practices for ethical AI use in HR"
       ]
     },
     {
-      "title": "Accessing and Modifying Array Elements",
-      "slug": "accessing-and-modifying-array-elements",
+      "title": "Understanding Large Language Models",
+      "slug": "understanding-large-language-models",
       "id": 4,
-      "time": 20,
-      "learningObjective": "Access and modify elements within an array using square brackets.",
+      "time": 10,
+      "learningObjective": "Explain how large language models (e.g., ChatGPT) generate text.",
       "outline": [
-        "Using square bracket notation to access elements",
-        "Modifying existing array elements",
-        "Common pitfalls when accessing/modifying arrays",
-        "Demonstration: Accessing and modifying arrays in Visual Studio Code",
-        "Activity: Manipulating array data based on given instructions"
+        "Introduction to large language models",
+        "Basic principles of how LLMs work",
+        "Training process and data requirements",
+        "Demonstration of text generation using ChatGPT",
+        "Potential applications of LLMs in HR"
       ]
     },
     {
-      "title": "Basic Array Methods",
-      "slug": "basic-array-methods",
+      "title": "Limitations and Risks of Large Language Models",
+      "slug": "limitations-and-risks-of-large-language-models",
       "id": 5,
-      "time": 15,
-      "learningObjective": "Use basic array methods, such as push() and pop(), to manage array data.",
+      "time": 10,
+      "learningObjective": "Identify the limitations of large language models (e.g., ChatGPT) including risks like hallucination and over-trust.",
       "outline": [
-        "Introduction to push() and pop() methods",
-        "Adding elements to the end of an array with push()",
-        "Removing elements from the end of an array with pop()",
-        "Demonstration: Using push() and pop() in Visual Studio Code",
-        "Guided practice: Applying push() and pop() to solve a problem"
+        "Common limitations of LLMs in HR contexts",
+        "Understanding hallucinations in AI-generated content",
+        "Risks of over-reliance on AI-generated information",
+        "Strategies for mitigating risks when using LLMs in HR",
+        "Future developments and potential improvements in LLM technology"
       ]
     }
   ]

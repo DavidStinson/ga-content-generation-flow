@@ -16,23 +16,41 @@ token_history = []
 
 class ContentState(BaseModel):
     
-    module_title: str = "Introduction to Javascript Arrays"
+    # module_title: str = "Introduction to Javascript Arrays"
 
-    module_topic: str = "This JavaScript Arrays module is designed to provide a comprehensive introduction to arrays, a fundamental list datatype in programming. The module concludes with an extended practical exercise where learners will create, modify, and iterate through an array of strings. This content is suitable for beginners who are relatively new to JavaScript programming."
+    # module_topic: str = "This JavaScript Arrays module is designed to provide a comprehensive introduction to arrays, a fundamental list datatype in programming. The module concludes with an extended practical exercise where learners will create, modify, and iterate through an array of strings. This content is suitable for beginners who are relatively new to JavaScript programming."
 
-    module_minutes: int = 90
+    # module_minutes: int = 90
 
-    learner_persona: str = "Little to no prior coding experience; basic computer literacy is assumed. Students are adult learners and aspiring professionals."
+    # learner_persona: str = "Little to no prior coding experience; basic computer literacy is assumed. Students are adult learners and aspiring professionals."
+
+    # learning_objectives: list[str] = [
+    #     "Define JavaScript arrays and explain how they organize data.",
+    #     "Identify the components of an array, including its elements and index positions.",
+    #     "Create arrays using JavaScript literal notation.",
+    #     "Access and modify elements within an array using square brackets.",
+    #     "Use basic array methods, such as push() and pop(), to manage array data."
+    # ]
+
+    # tools: str = "Visual Studio Code"
+
+    module_title: str = "AI for HR workshop"
+
+    module_topic: str = "AI and generative AI tools for HR professionals."
+
+    learner_persona: str = "HR professionals who are looking to use AI to automate their work and improve their efficiency."
+
+    module_minutes: int = 60
 
     learning_objectives: list[str] = [
-        "Define JavaScript arrays and explain how they organize data.",
-        "Identify the components of an array, including its elements and index positions.",
-        "Create arrays using JavaScript literal notation.",
-        "Access and modify elements within an array using square brackets.",
-        "Use basic array methods, such as push() and pop(), to manage array data."
+        "Differentiate between different types of AI in the HR space.",
+        "Describe the use cases and capabilities of HR-specific AI tools.",
+        "Recognize key ethical risks associated with using AI in HR, including bias, transparency, and accountability.",
+        "Explain how large language models (e.g., ChatGPT) generate text.",
+        "Identify the limitations of large language models (e.g., ChatGPT) including risks like hallucination and over-trust."
     ]
 
-    tools: str = "Visual Studio Code"
+    tools: str = "Webinar style - no tools but participants can be given a worksheet to fill out during the lesson."
 
     final_format: str = "markdown"
 
@@ -70,7 +88,7 @@ class ContentGenerationFlow(Flow[ContentState]):
         self.state.microlessons = meta["microlessons"]
 
         for microlesson in self.state.microlessons:
-            microlesson["microlessons_text"] = "blah"
+            microlesson["microlessons_text"] = ""
             if microlesson["id"] > 1:
                 numOfPreviousMicrolessons = microlesson["id"] - 1
 
@@ -79,6 +97,7 @@ class ContentGenerationFlow(Flow[ContentState]):
                         break
 
                     microlesson["microlessons_text"] = f"{microlesson["microlessons_text"]} {microlesson['sme_content']}"
+                    print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
             
             print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
 
@@ -97,7 +116,7 @@ class ContentGenerationFlow(Flow[ContentState]):
         if self.state.final_format != "Slides":
 
             for microlesson in self.state.microlessons:
-                microlesson["microlessons_text"] = "blah"
+                microlesson["microlessons_text"] = ""
                 if microlesson["id"] > 1:
                     numOfPreviousMicrolessons = microlesson["id"] - 1
 
@@ -106,6 +125,8 @@ class ContentGenerationFlow(Flow[ContentState]):
                             break
 
                         microlesson["microlessons_text"] = f"{microlesson["microlessons_text"]} {microlesson['led_content']}"
+                        print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
+            
 
                 microlesson_output = (
                     LdCrew()

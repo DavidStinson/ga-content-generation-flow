@@ -1,79 +1,81 @@
 {
-  "overview": "This module provides a comprehensive introduction to JavaScript arrays, a fundamental list datatype in programming. Designed for beginners with little to no prior coding experience, the module covers array creation, manipulation, and basic operations. It concludes with a practical exercise where learners will apply their knowledge to create, modify, and iterate through an array of strings.",
+  "overview": "This 90-minute module introduces JavaScript arrays, a fundamental data structure in programming. Designed for beginners with little to no coding experience, it covers array creation, element access and modification, and basic array methods. The module concludes with a practical exercise to reinforce learning.",
   "tools": [
     "Visual Studio Code"
   ],
-  "learnerPersona": "Adult learners and aspiring professionals with little to no prior coding experience. Basic computer literacy is assumed.",
+  "learnerPersona": "Adult learners and aspiring professionals with little to no prior coding experience, but possessing basic computer literacy.",
   "prerequisites": [
     "Basic computer literacy",
-    "Familiarity with basic JavaScript concepts (variables, data types)"
+    "Familiarity with JavaScript variables and data types"
   ],
-  "qaReasoning": "After reviewing each microlesson outline against the learning objectives, target learner persona, and time constraints, I found that all the existing topics are directly aligned with the intended learning outcomes. In the 'Introduction to JavaScript Arrays', every item (definition, purpose, real-world examples, and data organization) supports the objective of defining arrays and explaining their organizational role. In 'Array Components and Structure', the bullets clearly focus on key components such as elements, index positions, and array length while providing visual reinforcement. The outlines for creating arrays, accessing/modifying elements, and using basic methods include only content that directly teaches the required practical skills, with practical exercises to reinforce learning. All sections fit within the 8-minute time frame due to concise bullet points and clear focus, which makes them appropriate for beginner-level learners and ensures real-world application. Therefore, no extraneous items were present that needed removal, and the content has been retained as is with minor polishing to ensure ultra-focus on the learning objectives.",
+  "qaReasoning": "I reviewed each microlesson to ensure that every detail in the outline directly contributes to its learning objective and that it is appropriate for beginner learners within the allotted time. For the 'Understanding JavaScript Arrays' lesson, I removed the bullet 'Advantages of using arrays in programming' as it does not directly aid in defining arrays or explaining how they organize data. In the 'Array Structure and Components' lesson, I removed 'Array length and its significance' because the objective strictly focuses on identifying elements and index positions. All other outline items were retained as they directly support the objectives, provide practical demonstrations, and include engaging activities, while also fitting within the overall 90-minute module timeframe.",
   "microlessons": [
     {
-      "title": "Introduction to JavaScript Arrays",
-      "slug": "introduction-to-javascript-arrays",
+      "title": "Understanding JavaScript Arrays",
+      "slug": "understanding-javascript-arrays",
       "id": 1,
-      "time": 8,
+      "time": 20,
       "learningObjective": "Define JavaScript arrays and explain how they organize data.",
       "outline": [
-        "Definition of arrays in JavaScript",
-        "Purpose and benefits of using arrays",
-        "Real-world examples of array usage",
-        "How arrays organize and store data"
+        "Introduction to arrays as ordered lists of data",
+        "Real-world analogies for arrays (e.g., shopping lists, playlists)",
+        "Demonstration: Creating a simple array in Visual Studio Code",
+        "Activity: Identifying array use cases in everyday scenarios"
       ]
     },
     {
-      "title": "Array Components and Structure",
-      "slug": "array-components-and-structure",
+      "title": "Array Structure and Components",
+      "slug": "array-structure-and-components",
       "id": 2,
-      "time": 8,
+      "time": 15,
       "learningObjective": "Identify the components of an array, including its elements and index positions.",
       "outline": [
-        "Array elements: definition and characteristics",
-        "Index positions: zero-based numbering system",
-        "Array length and its significance",
-        "Visualizing array structure"
+        "Array elements: Definition and examples",
+        "Index positions: Zero-based numbering system",
+        "Demonstration: Examining array structure in Visual Studio Code",
+        "Activity: Mapping out the structure of a given array"
       ]
     },
     {
       "title": "Creating Arrays with Literal Notation",
       "slug": "creating-arrays-with-literal-notation",
       "id": 3,
-      "time": 8,
+      "time": 20,
       "learningObjective": "Create arrays using JavaScript literal notation.",
       "outline": [
-        "Syntax for array literal notation",
+        "Introduction to array literal notation syntax",
         "Creating arrays with different data types",
         "Empty arrays and their uses",
-        "Practical examples of array creation"
+        "Demonstration: Creating various arrays in Visual Studio Code",
+        "Guided practice: Creating arrays based on real-world scenarios"
       ]
     },
     {
       "title": "Accessing and Modifying Array Elements",
       "slug": "accessing-and-modifying-array-elements",
       "id": 4,
-      "time": 8,
+      "time": 20,
       "learningObjective": "Access and modify elements within an array using square brackets.",
       "outline": [
         "Using square bracket notation to access elements",
         "Modifying existing array elements",
-        "Common pitfalls when accessing/modifying elements",
-        "Practical exercises on element manipulation"
+        "Common pitfalls when accessing/modifying arrays",
+        "Demonstration: Accessing and modifying arrays in Visual Studio Code",
+        "Activity: Manipulating array data based on given instructions"
       ]
     },
     {
       "title": "Basic Array Methods",
       "slug": "basic-array-methods",
       "id": 5,
-      "time": 8,
+      "time": 15,
       "learningObjective": "Use basic array methods, such as push() and pop(), to manage array data.",
       "outline": [
-        "Introduction to array methods",
-        "Using push() to add elements to the end of an array",
-        "Using pop() to remove elements from the end of an array",
-        "Other useful array methods (e.g., unshift(), shift())",
-        "Practical exercises using array methods"
+        "Introduction to push() and pop() methods",
+        "Adding elements to the end of an array with push()",
+        "Removing elements from the end of an array with pop()",
+        "Demonstration: Using push() and pop() in Visual Studio Code",
+        "Guided practice: Applying push() and pop() to solve a problem"
       ]
     }
   ]
