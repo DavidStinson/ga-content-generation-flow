@@ -154,7 +154,7 @@ class ContentGenerationFlow(Flow[ContentState]):
         for item in token_history:
             print(item)
 
-        return self.state.microlessons
+        return json.dumps(self.state.microlessons)
 
 def kickoff():
     content_generation_flow = ContentGenerationFlow()
