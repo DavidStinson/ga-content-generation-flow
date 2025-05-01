@@ -60,8 +60,8 @@ If a topic is important enough that the content is incomplete without it, always
 Assume that learners are intelligent and capable of learning, but be careful making any further assumptions. Don't assume they are familiar with technical or business jargon - when using these terms, you should define them.
 """
 
-general_assembly_learning_philosophy = """
-# General Assembly’s Learning Philosophy
+ga_learning_philosophy = """
+# General Assembly's Learning Philosophy
 
 ## Putting Real Skills to Work
 
@@ -1116,7 +1116,7 @@ Do not link to content held in other modules, as this defeats the purpose of mod
 
 documentation = {
   "technical_voice": technical_voice,
-  "general_assembly_learning_philosophy": general_assembly_learning_philosophy,
+  "ga_learning_philosophy": ga_learning_philosophy,
   "ga_inclusivity_guidelines": ga_inclusivity_guidelines,
   "exercise_instruction_guidelines": exercise_instruction_guidelines,
   "markdown_document_structure": markdown_document_structure,

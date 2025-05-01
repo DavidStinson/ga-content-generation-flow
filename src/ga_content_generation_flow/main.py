@@ -56,7 +56,7 @@ class ContentState(BaseModel):
 
     doc_technical_voice: str = documentation["technical_voice"]
 
-    doc_ga_learning_philosophy: str = documentation["general_assembly_learning_philosophy"]
+    doc_ga_learning_philosophy: str = documentation["ga_learning_philosophy"]
 
     doc_ga_inclusivity_guidelines: str = documentation["ga_inclusivity_guidelines"]
 
@@ -166,7 +166,7 @@ class ContentGenerationFlow(Flow[ContentState]):
             "microlessons": self.state.microlessons
         }
 
-        return json.dumps(self.state.microlessons)
+        return json.dumps(module)
 
 def kickoff():
     content_generation_flow = ContentGenerationFlow()
