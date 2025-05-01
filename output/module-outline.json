@@ -1,54 +1,54 @@
 {
-  "overview": "This module introduces HR professionals to AI and generative AI tools, focusing on their applications in HR. Participants will learn about different types of AI, explore HR-specific AI tools, understand ethical considerations, and gain insights into large language models like ChatGPT.",
+  "overview": "This module introduces HR professionals to AI and generative AI tools, focusing on their applications in the HR field. Participants will explore different types of AI, HR-specific AI tools, ethical considerations, and the functionality and limitations of large language models like ChatGPT.",
   "tools": [
     "Webinar platform",
-    "Worksheet for participants"
+    "Worksheet"
   ],
   "learnerPersona": "HR professionals seeking to leverage AI for work automation and efficiency improvement",
   "prerequisites": [
     "Basic understanding of HR processes",
-    "Familiarity with digital tools in HR"
+    "Familiarity with digital tools used in HR"
   ],
   "qaReasoning": "",
   "microlessons": [
     {
-      "title": "Understanding AI in HR",
-      "slug": "understanding-ai-in-hr",
+      "title": "Introduction to AI in HR",
+      "slug": "introduction-to-ai-in-hr",
       "id": 1,
-      "time": 15,
+      "time": 12,
       "learningObjective": "Differentiate between different types of AI in the HR space.",
       "outline": [
-        "Introduction to AI and its relevance in HR",
-        "Types of AI: Machine Learning, Natural Language Processing, Computer Vision",
+        "Definition of AI and its relevance to HR",
+        "Types of AI used in HR: machine learning, natural language processing, computer vision",
         "Examples of each AI type in HR contexts",
-        "Brief discussion on AI's potential impact on HR roles"
+        "Brief discussion on the impact of AI on HR roles"
       ]
     },
     {
-      "title": "HR-Specific AI Tools and Use Cases",
-      "slug": "hr-specific-ai-tools-and-use-cases",
+      "title": "AI Tools for HR Professionals",
+      "slug": "ai-tools-for-hr-professionals",
       "id": 2,
       "time": 15,
       "learningObjective": "Describe the use cases and capabilities of HR-specific AI tools.",
       "outline": [
-        "Overview of AI tools in recruitment (e.g., resume screening, chatbots)",
-        "AI in employee onboarding and training",
-        "Performance management and predictive analytics tools",
-        "AI for employee engagement and retention",
-        "Case studies of successful AI implementation in HR"
+        "Overview of popular AI-powered HR tools",
+        "Use cases: recruitment, onboarding, performance management, employee engagement",
+        "Capabilities: data analysis, predictive analytics, automation of repetitive tasks",
+        "Real-world examples of AI tools improving HR processes",
+        "Worksheet activity: Identifying potential AI applications in participants' HR departments"
       ]
     },
     {
-      "title": "Ethical Considerations in AI for HR",
-      "slug": "ethical-considerations-in-ai-for-hr",
+      "title": "Ethical Considerations in HR AI",
+      "slug": "ethical-considerations-in-hr-ai",
       "id": 3,
-      "time": 10,
+      "time": 12,
       "learningObjective": "Recognize key ethical risks associated with using AI in HR, including bias, transparency, and accountability.",
       "outline": [
         "Introduction to AI ethics in HR",
-        "Bias in AI: sources and implications",
-        "Transparency and explainability of AI decisions",
-        "Accountability and human oversight in AI-driven processes",
+        "Bias in AI: sources and implications for HR decisions",
+        "Transparency challenges: explaining AI-driven decisions to employees",
+        "Accountability: determining responsibility for AI-made decisions",
         "Best practices for ethical AI use in HR"
       ]
     },
@@ -59,25 +59,26 @@
       "time": 10,
       "learningObjective": "Explain how large language models (e.g., ChatGPT) generate text.",
       "outline": [
-        "Introduction to large language models",
+        "Introduction to large language models (LLMs)",
         "Basic principles of how LLMs work",
-        "Training process and data requirements",
-        "Demonstration of text generation using ChatGPT",
-        "Potential applications of LLMs in HR"
+        "Training process and data used in LLMs",
+        "Text generation process: prompts, tokens, and predictions",
+        "Demonstration of ChatGPT text generation (if possible within webinar format)"
       ]
     },
     {
-      "title": "Limitations and Risks of Large Language Models",
-      "slug": "limitations-and-risks-of-large-language-models",
+      "title": "Limitations of Large Language Models in HR",
+      "slug": "limitations-of-large-language-models-in-hr",
       "id": 5,
-      "time": 10,
+      "time": 11,
       "learningObjective": "Identify the limitations of large language models (e.g., ChatGPT) including risks like hallucination and over-trust.",
       "outline": [
-        "Common limitations of LLMs in HR contexts",
-        "Understanding hallucinations in AI-generated content",
-        "Risks of over-reliance on AI-generated information",
-        "Strategies for mitigating risks when using LLMs in HR",
-        "Future developments and potential improvements in LLM technology"
+        "Common misconceptions about LLMs",
+        "Hallucination: when and why LLMs generate false information",
+        "Over-trust: risks of relying too heavily on AI-generated content",
+        "Data privacy and confidentiality concerns in HR contexts",
+        "Best practices for using LLMs in HR tasks",
+        "Worksheet activity: Identifying potential risks and limitations in using LLMs for specific HR tasks"
       ]
     }
   ]

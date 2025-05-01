@@ -111,7 +111,9 @@ class ContentGenerationFlow(Flow[ContentState]):
             )
             token_history.append(microlesson_output.token_usage)
 
-            self.state.microlessons[microlesson["id"] - 1]["sme_content"] = microlesson_output.raw
+            # changing this from something that I know works to test...
+            # apply this below if it works!
+            microlesson["sme_content"] = microlesson_output.raw
 
         if self.state.final_format != "Slides":
 
@@ -153,6 +155,16 @@ class ContentGenerationFlow(Flow[ContentState]):
 
         for item in token_history:
             print(item)
+
+        module = {
+            "title": self.state.module_title,
+            "about": self.state.module_topic,
+            "learner_persona": self.state.learner_persona,
+            "prerequisites": [],
+            "tools": [],
+            "qa_reasoning": "",
+            "microlessons": self.state.microlessons
+        }
 
         return json.dumps(self.state.microlessons)
 

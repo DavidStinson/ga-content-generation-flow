@@ -126,7 +126,7 @@ learning_design_task:
     {doc_ga_learning_philosophy}
     </ga_learning_philosophy>
 
-    <ga_inclusivity_guidelines id=6 title="General Assembly Inclusivity Guidelines" purpose="This document outlines General Assembly’s inclusivity guidelines. It provides guidelines for writing content that is inclusive and accessible to a diverse audience.">
+    <ga_inclusivity_guidelines id=6 title="General Assembly Inclusivity Guidelines" purpose="This document outlines General Assembly's inclusivity guidelines. It provides guidelines for writing content that is inclusive and accessible to a diverse audience.">
     {doc_ga_inclusivity_guidelines}
     </ga_inclusivity_guidelines>
 
