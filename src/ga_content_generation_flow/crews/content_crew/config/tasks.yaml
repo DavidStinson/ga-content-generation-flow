@@ -11,8 +11,8 @@ develop_microlesson_content:
 
     The microlesson metadata is as follows:
     - Title: {title}
-    - Time: {time}
-    - Learning Objective: {learningObjective}
+    - minutes: {minutes}
+    - Learning Objective: {learning_objective}
     - Outline: {outline}
     - Learner Persona: {learner_persona}
 
@@ -71,7 +71,7 @@ develop_microlesson_content:
     The output must include:
 
     - The title of the microlesson formatted as: # {title}
-    - The learning objective of the microlesson formatted as: **Learning Objective:** {learningObjective}
+    - The learning objective of the microlesson formatted as: **Learning Objective:** {learning_objective}
     - Clear, paragraph-based explanations of each concept pertinent to the microlesson objective. Subheadings should be used to break up the content into logical sections and should be named appropriately in sentence case.
     - Formatted examples (for example, code snippets if the module topic is technical, practical scenarios, visual descriptions if applicable).
     - Explanations tailored to the learner persona and follow the best practices from our internal documentation found at the end of this prompt.

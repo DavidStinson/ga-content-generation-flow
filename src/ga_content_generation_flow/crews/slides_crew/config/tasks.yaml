@@ -15,8 +15,8 @@ create_slide_deck_outline:
 
     The microlesson metadata is as follows:
     - Title: {title}
-    - Time: {time}
-    - Learning Objective: {learningObjective}
+    - Minutes: {minutes}
+    - Learning Objective: {learning_objective}
     - Learner Persona: {learner_persona}
     - Tools: {tools}
     You must:

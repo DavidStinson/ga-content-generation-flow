@@ -28,7 +28,7 @@ class MicrolessonModel(BaseModel):
     title: str
     slug: str
     id: int
-    time: int
+    minutes: int
     learning_objective: str
     outline: list[str]
 
@@ -37,7 +37,6 @@ class ModuleModel(BaseModel):
     tools: list[str]
     learner_persona: str
     prerequisites: list[str]
-    qa_reasoning: str
     microlessons: list[MicrolessonModel]
 
 @CrewBase

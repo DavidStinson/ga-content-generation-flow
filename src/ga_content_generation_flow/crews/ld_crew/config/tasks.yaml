@@ -17,8 +17,8 @@ learning_design_task:
 
     The microlesson metadata is as follows:
     - Title: {title}
-    - Time: {time}
-    - Learning Objective: {learningObjective}
+    - Minutes: {minutes}
+    - Learning Objective: {learning_objective}
     - Learner Persona: {learner_persona}
     - Tools: {tools}
     You must:
@@ -79,10 +79,6 @@ learning_design_task:
     Add an instructor guide to the microlesson. The instructor guide should be a light-touch guide for the instructor about how to best deliver the microlesson.
 
     The instructor guide should also include the answers to any knowledge checks and a suggested solution to the activity.
-
-    ## Document your changes and reasoning
-
-    Document your changes and the reason for each change in extreme detail in a new section at the end of the document called "Reasoning for Changes".
 
     ## The SME has created the below content for this microlesson
         

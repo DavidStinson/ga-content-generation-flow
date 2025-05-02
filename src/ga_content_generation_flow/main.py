@@ -162,7 +162,6 @@ class ContentGenerationFlow(Flow[ContentState]):
             "learner_persona": self.state.learner_persona,
             "prerequisites": [],
             "tools": [],
-            "qa_reasoning": "",
             "microlessons": self.state.microlessons
         }
 
