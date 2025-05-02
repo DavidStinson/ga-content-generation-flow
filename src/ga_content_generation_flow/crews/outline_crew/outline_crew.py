@@ -29,15 +29,15 @@ class MicrolessonModel(BaseModel):
     slug: str
     id: int
     time: int
-    learningObjective: str
+    learning_objective: str
     outline: list[str]
 
 class ModuleModel(BaseModel):
     overview: str
     tools: list[str]
-    learnerPersona: str
+    learner_persona: str
     prerequisites: list[str]
-    qaReasoning: str
+    qa_reasoning: str
     microlessons: list[MicrolessonModel]
 
 @CrewBase
