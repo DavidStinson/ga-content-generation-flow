@@ -160,10 +160,12 @@ class ContentGenerationFlow(Flow[ContentState]):
             "title": self.state.module_title,
             "about": self.state.module_topic,
             "learner_persona": self.state.learner_persona,
-            "prerequisites": [],
-            "tools": [],
+            "prerequisites": [self.state.prerequisites],
+            "tools": [self.state.tools],
             "microlessons": self.state.microlessons
         }
+
+        print(module)
 
         return json.dumps(module)
 
