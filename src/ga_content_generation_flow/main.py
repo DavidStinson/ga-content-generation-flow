@@ -15,57 +15,21 @@ from ga_content_generation_flow.data import documentation
 token_history = []
 
 class ContentState(BaseModel):
-    
-    # module_title: str = "Introduction to Javascript Arrays"
+    module_title: str
+    module_topic: str
+    module_minutes: int
+    learner_persona: str
+    learning_objectives: list[str]
+    tools: str
+    final_format: str
 
-    # module_topic: str = "This JavaScript Arrays module is designed to provide a comprehensive introduction to arrays, a fundamental list datatype in programming. The module concludes with an extended practical exercise where learners will create, modify, and iterate through an array of strings. This content is suitable for beginners who are relatively new to JavaScript programming."
-
-    # module_minutes: int = 90
-
-    # learner_persona: str = "Little to no prior coding experience; basic computer literacy is assumed. Students are adult learners and aspiring professionals."
-
-    # learning_objectives: list[str] = [
-    #     "Define JavaScript arrays and explain how they organize data.",
-    #     "Identify the components of an array, including its elements and index positions.",
-    #     "Create arrays using JavaScript literal notation.",
-    #     "Access and modify elements within an array using square brackets.",
-    #     "Use basic array methods, such as push() and pop(), to manage array data."
-    # ]
-
-    # tools: str = "Visual Studio Code"
-
-    module_title: str = "AI for HR workshop"
-
-    module_topic: str = "AI and generative AI tools for HR professionals."
-
-    learner_persona: str = "HR professionals who are looking to use AI to automate their work and improve their efficiency."
-
-    module_minutes: int = 60
-
-    learning_objectives: list[str] = [
-        "Differentiate between different types of AI in the HR space.",
-        "Describe the use cases and capabilities of HR-specific AI tools.",
-        "Recognize key ethical risks associated with using AI in HR, including bias, transparency, and accountability.",
-        "Explain how large language models (e.g., ChatGPT) generate text.",
-        "Identify the limitations of large language models (e.g., ChatGPT) including risks like hallucination and over-trust."
-    ]
-
-    tools: str = "Webinar style - no tools but participants can be given a worksheet to fill out during the lesson."
-
-    final_format: str = "markdown"
-
+    # referenced internal documentation
     doc_technical_voice: str = documentation["technical_voice"]
-
     doc_ga_learning_philosophy: str = documentation["ga_learning_philosophy"]
-
     doc_ga_inclusivity_guidelines: str = documentation["ga_inclusivity_guidelines"]
-
     doc_exercise_instruction_guidelines: str = documentation["exercise_instruction_guidelines"]
-
     doc_markdown_document_structure: str = documentation["markdown_document_structure"]
-
     doc_crafting_modular_code: str = documentation["crafting_modular_code"]
-
     doc_writing_modularly: str = documentation["writing_modularly"]
 
     microlessons: list[dict] = []
@@ -96,7 +60,7 @@ class ContentGenerationFlow(Flow[ContentState]):
                     if microlesson["id"] >= numOfPreviousMicrolessons:
                         break
 
-                    microlesson["microlessons_text"] = f"{microlesson["microlessons_text"]} {microlesson['sme_content']}"
+                    microlesson["microlessons_text"] = f"{microlesson['microlessons_text']} {microlesson['sme_content']}"
                     print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
             
             print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
@@ -126,9 +90,8 @@ class ContentGenerationFlow(Flow[ContentState]):
                         if microlesson["id"] >= numOfPreviousMicrolessons:
                             break
 
-                        microlesson["microlessons_text"] = f"{microlesson["microlessons_text"]} {microlesson['led_content']}"
+                        microlesson["microlessons_text"] = f"{microlesson['microlessons_text']} {microlesson['led_content']}"
                         print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
-            
 
                 microlesson_output = (
                     LdCrew()
