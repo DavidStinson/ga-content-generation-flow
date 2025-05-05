@@ -77,7 +77,7 @@ generate_module_outline:
     - `overview`: A brief summary of the module's purpose and structure (generated based on the provided module topic).
     - `tools`: List of necessary software as defined in by tools.
     - `learner_persona`: A description of the target audience (using the provided learner persona).
-    - `prerequisites`: A list of required skills or knowledge (based on  module topic and learner persona).
+    - `prerequisites`: A list of the required skills or knowledge (based on module topic and learner persona).
     - Microlessons array:
       - For each microlesson:
         - `title`: Include the title of the microlesson.

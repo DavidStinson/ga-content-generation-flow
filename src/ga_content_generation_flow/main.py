@@ -49,6 +49,7 @@ class ContentGenerationFlow(Flow[ContentState]):
 
         meta = json.loads(result.raw)
 
+        self.state.prerequisites = meta["prerequisites"]
         self.state.microlessons = meta["microlessons"]
 
         for microlesson in self.state.microlessons:
