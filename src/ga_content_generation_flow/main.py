@@ -22,6 +22,7 @@ class ContentState(BaseModel):
     learning_objectives: list[str]
     tools: str
     final_format: str
+    prerequisites: list[str] = []
 
     # referenced internal documentation
     doc_technical_voice: str = documentation["technical_voice"]
