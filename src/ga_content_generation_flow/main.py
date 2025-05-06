@@ -15,13 +15,13 @@ from ga_content_generation_flow.data import documentation
 token_history = []
 
 class ContentState(BaseModel):
-    module_title: str = ""
-    module_topic: str = ""
-    module_minutes: int = 0
-    learner_persona: str = ""
-    learning_objectives: list[str] = []
-    tools: str = ""
-    final_format: str = ""
+    module_title: str
+    module_topic: str
+    module_minutes: int
+    learner_persona: str
+    learning_objectives: list[str]
+    tools: str
+    final_format: str = "markdown"
     prerequisites: list[str] = []
 
     # referenced internal documentation
