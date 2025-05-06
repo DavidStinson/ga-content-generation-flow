@@ -1,21 +1,21 @@
-from fastapi import FastAPI
-from pydantic import ValidationError
-from ga_content_generation_flow.main import ContentState, ContentGenerationFlow
+# from fastapi import FastAPI
+# from pydantic import ValidationError
+# from ga_content_generation_flow.main import ContentState, ContentGenerationFlow
 
-app = FastAPI()
+# app = FastAPI()
 
 
-@app.post("/generate")
-async def generate(state: ContentState):  # FastAPI parses + validates automatically
-    print(state.model_dump())
-    try:
-        flow = ContentGenerationFlow(state=state)
-        result = flow.kickoff()
-        return {"status": "success", "result": result}
-    except ValidationError as ve:
-        return {"status": "error", "message": "Invalid input", "details": ve.errors()}
-    except Exception as e:
-        return {"status": "error", "message": str(e)}
+# @app.post("/generate")
+# async def generate(state: ContentState):  # FastAPI parses + validates automatically
+#     print(state.model_dump())
+#     try:
+#         flow = ContentGenerationFlow(state=state)
+#         result = flow.kickoff()
+#         return {"status": "success", "result": result}
+#     except ValidationError as ve:
+#         return {"status": "error", "message": "Invalid input", "details": ve.errors()}
+#     except Exception as e:
+#         return {"status": "error", "message": str(e)}
 
 
 
