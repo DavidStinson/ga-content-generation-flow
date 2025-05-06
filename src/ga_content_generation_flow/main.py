@@ -39,7 +39,6 @@ class ContentGenerationFlow(Flow[ContentState]):
     @start()
     def generate_outline(self):
         print(self.state.module_title)
-        print("Generating content outline")
         result = (
             OutlineCrew()
             .crew()
@@ -63,9 +62,6 @@ class ContentGenerationFlow(Flow[ContentState]):
                         break
 
                     microlesson["microlessons_text"] = f"{microlesson['microlessons_text']} {microlesson['sme_content']}"
-                    print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
-            
-            print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
 
             microlesson_output = (
                 ContentCrew()
@@ -93,7 +89,6 @@ class ContentGenerationFlow(Flow[ContentState]):
                             break
 
                         microlesson["microlessons_text"] = f"{microlesson['microlessons_text']} {microlesson['led_content']}"
-                        print("MICROLESSONS TEXT:", microlesson["microlessons_text"])
 
                 microlesson_output = (
                     LdCrew()
@@ -130,7 +125,7 @@ class ContentGenerationFlow(Flow[ContentState]):
             "microlessons": self.state.microlessons
         }
 
-        print(module)
+        print("THIS IS THE FINAL MODULE DATA YOU ARE LOOKING FOR!!!!!!!",module)
 
         return json.dumps(module)
 
