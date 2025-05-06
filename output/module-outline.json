@@ -1,84 +1,57 @@
 {
-  "overview": "This module introduces HR professionals to AI and generative AI tools, focusing on their applications in the HR field. Participants will explore different types of AI, HR-specific AI tools, ethical considerations, and the functionality and limitations of large language models like ChatGPT.",
+  "overview": "This module introduces learners to CSS Flexbox, a powerful layout system for creating flexible and responsive web designs. Students will learn the core concepts of Flexbox and how to apply them to common layout challenges.",
   "tools": [
-    "Webinar platform",
-    "Worksheet"
+    "Web browser",
+    "Text editor (e.g., VS Code)",
+    "CodePen or similar online code editor"
   ],
-  "learnerPersona": "HR professionals seeking to leverage AI for work automation and efficiency improvement",
+  "learner_persona": "Beginner to intermediate web developers looking to enhance their CSS layout skills and create more responsive designs.",
   "prerequisites": [
-    "Basic understanding of HR processes",
-    "Familiarity with digital tools used in HR"
+    "Basic HTML knowledge",
+    "Fundamental CSS understanding",
+    "Familiarity with web development concepts"
   ],
-  "qaReasoning": "",
   "microlessons": [
     {
-      "title": "Introduction to AI in HR",
-      "slug": "introduction-to-ai-in-hr",
+      "title": "Introduction to Flexbox",
+      "slug": "introduction-to-flexbox",
       "id": 1,
-      "time": 12,
-      "learningObjective": "Differentiate between different types of AI in the HR space.",
+      "minutes": 5,
+      "learning_objective": "Learn how to use CSS Flexbox for layout design.",
       "outline": [
-        "Definition of AI and its relevance to HR",
-        "Types of AI used in HR: machine learning, natural language processing, computer vision",
-        "Examples of each AI type in HR contexts",
-        "Brief discussion on the impact of AI on HR roles"
+        "Definition and purpose of Flexbox",
+        "Advantages over traditional layout methods",
+        "Basic Flexbox terminology (flex container, flex items)",
+        "Activating Flexbox with display: flex"
       ]
     },
     {
-      "title": "AI Tools for HR Professionals",
-      "slug": "ai-tools-for-hr-professionals",
+      "title": "Flex Container Properties",
+      "slug": "flex-container-properties",
       "id": 2,
-      "time": 15,
-      "learningObjective": "Describe the use cases and capabilities of HR-specific AI tools.",
+      "minutes": 8,
+      "learning_objective": "Learn how to use CSS Flexbox for layout design.",
       "outline": [
-        "Overview of popular AI-powered HR tools",
-        "Use cases: recruitment, onboarding, performance management, employee engagement",
-        "Capabilities: data analysis, predictive analytics, automation of repetitive tasks",
-        "Real-world examples of AI tools improving HR processes",
-        "Worksheet activity: Identifying potential AI applications in participants' HR departments"
+        "flex-direction: controlling the main axis",
+        "justify-content: aligning items along the main axis",
+        "align-items: aligning items along the cross axis",
+        "flex-wrap: controlling item wrapping",
+        "Practical examples of combining properties"
       ]
     },
     {
-      "title": "Ethical Considerations in HR AI",
-      "slug": "ethical-considerations-in-hr-ai",
+      "title": "Flex Item Properties",
+      "slug": "flex-item-properties",
       "id": 3,
-      "time": 12,
-      "learningObjective": "Recognize key ethical risks associated with using AI in HR, including bias, transparency, and accountability.",
+      "minutes": 7,
+      "learning_objective": "Learn how to use CSS Flexbox for layout design.",
       "outline": [
-        "Introduction to AI ethics in HR",
-        "Bias in AI: sources and implications for HR decisions",
-        "Transparency challenges: explaining AI-driven decisions to employees",
-        "Accountability: determining responsibility for AI-made decisions",
-        "Best practices for ethical AI use in HR"
-      ]
-    },
-    {
-      "title": "Understanding Large Language Models",
-      "slug": "understanding-large-language-models",
-      "id": 4,
-      "time": 10,
-      "learningObjective": "Explain how large language models (e.g., ChatGPT) generate text.",
-      "outline": [
-        "Introduction to large language models (LLMs)",
-        "Basic principles of how LLMs work",
-        "Training process and data used in LLMs",
-        "Text generation process: prompts, tokens, and predictions",
-        "Demonstration of ChatGPT text generation (if possible within webinar format)"
-      ]
-    },
-    {
-      "title": "Limitations of Large Language Models in HR",
-      "slug": "limitations-of-large-language-models-in-hr",
-      "id": 5,
-      "time": 11,
-      "learningObjective": "Identify the limitations of large language models (e.g., ChatGPT) including risks like hallucination and over-trust.",
-      "outline": [
-        "Common misconceptions about LLMs",
-        "Hallucination: when and why LLMs generate false information",
-        "Over-trust: risks of relying too heavily on AI-generated content",
-        "Data privacy and confidentiality concerns in HR contexts",
-        "Best practices for using LLMs in HR tasks",
-        "Worksheet activity: Identifying potential risks and limitations in using LLMs for specific HR tasks"
+        "flex-grow: controlling item growth",
+        "flex-shrink: controlling item shrinkage",
+        "flex-basis: setting the initial size of an item",
+        "order: changing the visual order of items",
+        "align-self: overriding alignment for individual items",
+        "Hands-on exercise: Creating a responsive card layout"
       ]
     }
   ]

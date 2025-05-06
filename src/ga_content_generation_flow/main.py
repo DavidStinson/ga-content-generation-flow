@@ -17,9 +17,9 @@ token_history = []
 class ContentState(BaseModel):
     module_title: str = ""
     module_topic: str = ""
-    module_minutes: int = 0
+    module_minutes: int = 20
     learner_persona: str = ""
-    learning_objectives: list[str] = []
+    learning_objectives: list[str] = ["learn how to use CSS Flexbox for layout design."]
     tools: str = ""
     final_format: str = "markdown"
     prerequisites: list[str] = []
@@ -101,7 +101,7 @@ class ContentGenerationFlow(Flow[ContentState]):
                     })
                 )
 
-                [microlesson]["led_content"] = microlesson_output.raw
+                microlesson["led_content"] = microlesson_output.raw
 
                 print("Done with microlesson", microlesson["id"])
 
