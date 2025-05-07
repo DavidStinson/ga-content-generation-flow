@@ -69,9 +69,9 @@ create_slide_deck_outline:
         
     You must use this content as a starting point and build upon it. The SME has created the below content for this microlesson. The content is fenced off with XML tags.
 
-    <sme_content>
-    {sme_content}
-    </sme_content>
+    <sme_response>
+    {sme_response}
+    </sme_response>
 
   expected_output: >
     A Markdown document (no code-block fences) that contains the complete

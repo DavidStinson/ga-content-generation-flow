@@ -84,9 +84,9 @@ learning_design_task:
         
     You must use this content as a starting point and build upon it. The SME has created the below content for this microlesson. The content is fenced off with XML tags.
 
-    <sme_content>
-    {sme_content}
-    </sme_content>
+    <sme_response>
+    {sme_response}
+    </sme_response>
 
     ## Take into account the previous microlessons that you've developed already in the module as you're developing this microlesson
     

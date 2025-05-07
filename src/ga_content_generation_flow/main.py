@@ -69,7 +69,7 @@ class ContentGenerationFlow(Flow[ContentState]):
 
             # changing this from something that I know works to test...
             # apply this below if it works!
-            microlesson["sme_content"] = microlesson_output.raw
+            microlesson["sme_response"] = microlesson_output.raw
 
             microlessons_text = f"{microlessons_text} {microlesson_output.raw}"
 
@@ -89,7 +89,7 @@ class ContentGenerationFlow(Flow[ContentState]):
                     })
                 )
 
-                microlesson["led_content"] = microlesson_output.raw
+                microlesson["led_response"] = microlesson_output.raw
 
                 microlessons_text = f"{microlessons_text} {microlesson_output.raw}"
 
@@ -114,8 +114,8 @@ class ContentGenerationFlow(Flow[ContentState]):
             "title": self.state.module_title,
             "about": self.state.module_topic,
             "learner_persona": self.state.learner_persona,
-            "prerequisites": [self.state.prerequisites],
-            "tools": [self.state.tools],
+            "prerequisites": self.state.prerequisites,
+            "tools": self.state.tools,
             "microlessons": self.state.microlessons
         }
 
