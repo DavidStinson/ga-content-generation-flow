@@ -1,6 +1,6 @@
 learning_design_task:
   agent: learning_experience_designer
-  output_file: output/learning-design-ml-{id}-{slug}.md
+  output_file: output/learning-design-ml-{id}.md
   description: >
     # Objectives
 

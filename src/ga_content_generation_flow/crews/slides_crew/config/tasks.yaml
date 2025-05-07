@@ -1,6 +1,6 @@
 create_slide_deck_outline:
   agent: slide_deck_architect
-  output_file: output/slide-deck-outline-{id}-{slug}.md
+  output_file: output/slide-deck-outline-{id}.md
   description: >
     # Objective
 

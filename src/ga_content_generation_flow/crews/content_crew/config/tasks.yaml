@@ -1,6 +1,6 @@
 develop_microlesson_content:
   agent: subject_matter_expert
-  output_file: output/microlesson-content-from-sme-{id}-{slug}.md
+  output_file: output/microlesson-content-from-sme-{id}.md
   description: >
     # Objectives
 
