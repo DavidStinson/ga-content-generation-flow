@@ -26,14 +26,14 @@ chatgpt_41 = LLM(
 class MicrolessonModel(BaseModel):
     """Represents a single microlesson within the module."""
     title: str
-    slug: str
     id: int
     minutes: int
     learning_objective: str
     outline: list[str]
 
 class ModuleModel(BaseModel):
-    overview: str
+    title: str
+    about: str
     tools: list[str]
     learner_persona: str
     prerequisites: list[str]

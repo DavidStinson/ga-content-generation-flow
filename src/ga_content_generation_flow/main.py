@@ -17,10 +17,10 @@ token_history = []
 class ContentState(BaseModel):
     module_title: str = ""
     module_topic: str = ""
-    module_minutes: int = 20
+    module_minutes: int = 0
     learner_persona: str = ""
-    learning_objectives: list[str] = ["learn how to use CSS Flexbox for layout design."]
-    tools: str = ""
+    learning_objectives: list[str] = []
+    tools: list[str] = []
     final_format: str = "markdown"
     prerequisites: list[str] = []
 
@@ -47,21 +47,15 @@ class ContentGenerationFlow(Flow[ContentState]):
 
         token_history.append(result.token_usage)
 
-        meta = json.loads(result.raw)
+        outline = json.loads(result.raw)
 
-        self.state.prerequisites = meta["prerequisites"]
-        self.state.microlessons = meta["microlessons"]
+        self.state.prerequisites = outline["prerequisites"]
+        self.state.microlessons = outline["microlessons"]
+
+        microlessons_text = ""
 
         for microlesson in self.state.microlessons:
-            microlesson["microlessons_text"] = ""
-            if microlesson["id"] > 1:
-                numOfPreviousMicrolessons = microlesson["id"] - 1
-
-                for microlesson in self.state.microlessons:
-                    if microlesson["id"] >= numOfPreviousMicrolessons:
-                        break
-
-                    microlesson["microlessons_text"] = f"{microlesson['microlessons_text']} {microlesson['sme_content']}"
+            microlesson["microlessons_text"] = microlessons_text
 
             microlesson_output = (
                 ContentCrew()
@@ -77,20 +71,14 @@ class ContentGenerationFlow(Flow[ContentState]):
             # apply this below if it works!
             microlesson["sme_content"] = microlesson_output.raw
 
+            microlessons_text = f"{microlessons_text} {microlesson_output.raw}"
+
             print("Done with microlesson", microlesson["id"])
 
         if self.state.final_format != "Slides":
-
+            microlessons_text = ""
             for microlesson in self.state.microlessons:
-                microlesson["microlessons_text"] = ""
-                if microlesson["id"] > 1:
-                    numOfPreviousMicrolessons = microlesson["id"] - 1
-
-                    for microlesson in self.state.microlessons:
-                        if microlesson["id"] >= numOfPreviousMicrolessons:
-                            break
-
-                        microlesson["microlessons_text"] = f"{microlesson['microlessons_text']} {microlesson['led_content']}"
+                microlesson["microlessons_text"] = microlessons_text
 
                 microlesson_output = (
                     LdCrew()
@@ -102,6 +90,8 @@ class ContentGenerationFlow(Flow[ContentState]):
                 )
 
                 microlesson["led_content"] = microlesson_output.raw
+
+                microlessons_text = f"{microlessons_text} {microlesson_output.raw}"
 
                 print("Done with microlesson", microlesson["id"])
 

@@ -71,9 +71,9 @@ And skills are somehow evolving even faster.
 
 At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
 
-Today’s workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
 
-We’ve spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
 
 Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
 
@@ -198,10 +198,10 @@ As part of the Adecco Group and LHH, we help match talent to business needs.
 ga_inclusivity_guidelines = """
 # GA Inclusivity Guidelines
 
-**GA’s mission is to enable people to pursue the work they love.**  
+**GA's mission is to enable people to pursue the work they love.**  
 Implicit in that mission is opening career paths to individuals underserved by broader education and employment systems—especially people of color and women pursuing lucrative tech careers historically dominated by white men.
 
-Media and cultural stereotypes contribute to this imbalance. For example, the persistent image of the upper-middle-class white male as the "typical programmer" affects both who chooses to enter the field and how those who don’t match that image are treated.
+Media and cultural stereotypes contribute to this imbalance. For example, the persistent image of the upper-middle-class white male as the "typical programmer" affects both who chooses to enter the field and how those who don't match that image are treated.
 
 **GA can help shift these perceptions by affirming that everyone belongs in tech.**
 
@@ -807,9 +807,9 @@ When crafting examples in code for core content, aim to satisfy these requiremen
 - Popularity
 - Recency
 
-For example, if you were crafting an array of movies, you should aim for popular movies and franchises with short names released in the last ten years. The array as a whole should display a diverse set of characters, stories, and genres. The names must be short to ensure that the point of the lesson isn’t lost by having students be overly concerned with typing long words.
+For example, if you were crafting an array of movies, you should aim for popular movies and franchises with short names released in the last ten years. The array as a whole should display a diverse set of characters, stories, and genres. The names must be short to ensure that the point of the lesson isn't lost by having students be overly concerned with typing long words.
 
-Don’t forget the overriding characteristic: brevity. While **Everything Everywhere All at Once** satisfies the need to be diverse, popular, and recent, some students may fall behind while writing it out. Those needs do not override the requirement to set students up for academic success.
+Don't forget the overriding characteristic: brevity. While **Everything Everywhere All at Once** satisfies the need to be diverse, popular, and recent, some students may fall behind while writing it out. Those needs do not override the requirement to set students up for academic success.
 
 > 🎉 The goal is for every student in a classroom to be engaged with the theme of our content and not feel excluded by curriculum choices.
 
@@ -829,7 +829,7 @@ const todos = [
 ];
 ```
 
-When this data is iterated over, it will likely result in `todo.todo` being used, which could be awkward and confusing for students (and this also isn’t a descriptive property name). Opt for data that looks something like this option instead:
+When this data is iterated over, it will likely result in `todo.todo` being used, which could be awkward and confusing for students (and this also isn't a descriptive property name). Opt for data that looks something like this option instead:
 
 ```javascript
 const todos = [
