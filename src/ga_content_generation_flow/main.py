@@ -23,6 +23,8 @@ class ContentState(BaseModel):
     tools: list[str] = []
     final_format: str = "markdown"
     prerequisites: list[str] = []
+    microlessons: list[dict] = []
+    microlessons_text: str = ""
 
     # referenced internal documentation
     doc_technical_voice: str = documentation["technical_voice"]
@@ -33,12 +35,29 @@ class ContentState(BaseModel):
     doc_crafting_modular_code: str = documentation["crafting_modular_code"]
     doc_writing_modularly: str = documentation["writing_modularly"]
 
-    microlessons: list[dict] = []
-
 class ContentGenerationFlow(Flow[ContentState]):
     @start()
+    def generate_content(self):
+        self.generate_outline()
+
+        for microlesson in self.state.microlessons:
+            microlesson["sme_response"] = self.sme_generate_microlesson(microlesson)
+            self.state.microlessons_text = f"{self.state.microlessons_text} {microlesson['sme_response']}"
+
+        self.state.microlessons_text = ""
+
+        if self.state.final_format == "Slides":
+            for microlesson in self.state.microlessons:
+                microlesson["led_response"] = self.led_generate_microlesson_slides(microlesson)
+                self.state.microlessons_text = f"{self.state.microlessons_text} {microlesson['led_response']}"
+        else:
+            for microlesson in self.state.microlessons:
+                microlesson["led_response"] = self.led_generate_microlesson(microlesson)
+                self.state.microlessons_text = f"{self.state.microlessons_text} {microlesson['led_response']}"
+        
+        return self.construct_response()
+
     def generate_outline(self):
-        print(self.state.module_title)
         result = (
             OutlineCrew()
             .crew()
@@ -52,64 +71,53 @@ class ContentGenerationFlow(Flow[ContentState]):
         self.state.prerequisites = outline["prerequisites"]
         self.state.microlessons = outline["microlessons"]
 
-        microlessons_text = ""
+    def sme_generate_microlesson(self, microlesson):
 
-        for microlesson in self.state.microlessons:
-            microlesson["microlessons_text"] = microlessons_text
+        microlesson_output = (
+            ContentCrew()
+            .crew()
+            .kickoff(inputs={
+                **self.state.model_dump(),
+                **microlesson
+            })
+        )
 
-            microlesson_output = (
-                ContentCrew()
-                .crew()
-                .kickoff(inputs={
-                    **self.state.model_dump(),
-                    **microlesson
-                })
-            )
-            token_history.append(microlesson_output.token_usage)
+        token_history.append(microlesson_output.token_usage)
 
-            # changing this from something that I know works to test...
-            # apply this below if it works!
-            microlesson["sme_response"] = microlesson_output.raw
+        print("SME is done with microlesson", microlesson["id"])
 
-            microlessons_text = f"{microlessons_text} {microlesson_output.raw}"
+        return microlesson_output.raw
 
-            print("Done with microlesson", microlesson["id"])
+    def led_generate_microlesson(self, microlesson):
+        microlesson_output = (
+            LdCrew()
+            .crew()
+            .kickoff(inputs={
+                **self.state.model_dump(),
+                **microlesson
+            })
+        )
 
-        if self.state.final_format != "Slides":
-            microlessons_text = ""
-            for microlesson in self.state.microlessons:
-                microlesson["microlessons_text"] = microlessons_text
+        print("LED is done with microlesson", microlesson["id"])
 
-                microlesson_output = (
-                    LdCrew()
-                    .crew()
-                    .kickoff(inputs={
-                        **self.state.model_dump(),
-                        **microlesson
-                    })
-                )
+        token_history.append(microlesson_output.token_usage)
 
-                microlesson["led_response"] = microlesson_output.raw
+        return microlesson_output.raw
+    
+    def led_generate_microlesson_slides(self, microlesson):
+        microlesson_output = (
+            SlidesCrew()
+            .crew()
+            .kickoff(inputs={**self.state.model_dump(), **microlesson})
+        )
 
-                microlessons_text = f"{microlessons_text} {microlesson_output.raw}"
+        print("LED is done with slides for microlesson", microlesson["id"])
 
-                print("Done with microlesson", microlesson["id"])
+        token_history.append(microlesson_output.token_usage)
 
-                token_history.append(microlesson_output.token_usage)
+        return microlesson_output.raw
 
-        if self.state.final_format == "Slides":
-            for microlesson in self.state.microlessons:
-                microlesson_output = (
-                    SlidesCrew()
-                    .crew()
-                    .kickoff(inputs={**self.state.model_dump(), **microlesson})
-                )
-
-                token_history.append(microlesson_output.token_usage)
-
-        for item in token_history:
-            print(item)
-
+    def construct_response(self):
         module = {
             "title": self.state.module_title,
             "about": self.state.module_topic,
@@ -118,8 +126,6 @@ class ContentGenerationFlow(Flow[ContentState]):
             "tools": self.state.tools,
             "microlessons": self.state.microlessons
         }
-
-        print("THIS IS THE FINAL MODULE DATA YOU ARE LOOKING FOR!!!!!!!", module)
 
         return json.dumps(module)
 

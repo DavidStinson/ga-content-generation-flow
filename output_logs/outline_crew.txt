@@ -46448,3 +46448,1929 @@ As part of the Adecco Group and LHH, we help match talent to business needs.
     }
   ]
 }"
+2025-05-07 10:18:39: task_name="generate_module_outline_task", task="# Objectives
+As the Senior Instructional Architect, your primary task is to generate a detailed module outline for a technical (with coding) or non-technical module. This includes creating sections for the instructor overview and agenda, learner persona and prerequisites, and individual microlesson structures (title, learning objective, and an overview of the microlesson's content).
+Your process should involve the following steps, informed by the provided module topic, learner persona, how many minutes the module is, and learning objectives as follows:
+The module topic is:  
+The learner persona is: 
+The learning objectives are: []
+The module is 0 minutes long.
+The tools and software students have access to are: []
+You must:
+## Define Module Title 
+Use the provided title: .
+## Analyze Inputs and Infer Context
+    
+Review the provided module topic, learner persona, and any learning objectives. From these, infer:
+- Appropriate technical or domain prerequisites. - Learner motivations, goals, and challenges. - Real-world contexts and examples relevant to the topic.
+## Design Microlesson Structure
+    
+Determine the number and sequence of microlessons based on number of learning objectives provided. For each microlesson:
+    
+- Create a concise title. - Outline key theoretical concepts to be introduced. - Include a method for learners to check their understanding (e.g., a multiple-choice question, coding prompt, or reflection). - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
+## Populate the Outline with Clear, Industry-Relevant Content:
+    
+For each microlesson, provide a detailed overview of the key topics to be covered. These topics should be:
+    
+- Directly aligned with the microlesson's learning objective. - Drawn from current industry practices, tools, and knowledge. - Selected to build progressively toward the overall module goal. - Use descriptive subsection names that reflect the actual content (e.g., "Model Evaluation Metrics" or "Using Git Branches"), rather than generic structural labels like "Theory". - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction. - Ensure each microlesson balances conceptual understanding and practical application, tied clearly to industry-relevant skills and tasks. - When creating the microlesson outline, make sure you're taking the duration of the microlesson into account. 
+## Embed Best Practices
+    
+Ensure alignment with GA's adult learning theory as outlined in "ga_learning_philosophy" and curriculum design best practices including:
+- Keep theory concise and actionable. - Make activities highly relevant and tool-aligned with tools. - Ensure accessibility for remote learners. - Never include any multiple choice questions or knowledge checks.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Instructional Architect", status="started"
+2025-05-07 10:18:44: task_name="generate_module_outline_task", task="# Objectives
+As the Senior Instructional Architect, your primary task is to generate a detailed module outline for a technical (with coding) or non-technical module. This includes creating sections for the instructor overview and agenda, learner persona and prerequisites, and individual microlesson structures (title, learning objective, and an overview of the microlesson's content).
+Your process should involve the following steps, informed by the provided module topic, learner persona, how many minutes the module is, and learning objectives as follows:
+The module topic is:  
+The learner persona is: 
+The learning objectives are: []
+The module is 0 minutes long.
+The tools and software students have access to are: []
+You must:
+## Define Module Title 
+Use the provided title: .
+## Analyze Inputs and Infer Context
+    
+Review the provided module topic, learner persona, and any learning objectives. From these, infer:
+- Appropriate technical or domain prerequisites. - Learner motivations, goals, and challenges. - Real-world contexts and examples relevant to the topic.
+## Design Microlesson Structure
+    
+Determine the number and sequence of microlessons based on number of learning objectives provided. For each microlesson:
+    
+- Create a concise title. - Outline key theoretical concepts to be introduced. - Include a method for learners to check their understanding (e.g., a multiple-choice question, coding prompt, or reflection). - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
+## Populate the Outline with Clear, Industry-Relevant Content:
+    
+For each microlesson, provide a detailed overview of the key topics to be covered. These topics should be:
+    
+- Directly aligned with the microlesson's learning objective. - Drawn from current industry practices, tools, and knowledge. - Selected to build progressively toward the overall module goal. - Use descriptive subsection names that reflect the actual content (e.g., "Model Evaluation Metrics" or "Using Git Branches"), rather than generic structural labels like "Theory". - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction. - Ensure each microlesson balances conceptual understanding and practical application, tied clearly to industry-relevant skills and tasks. - When creating the microlesson outline, make sure you're taking the duration of the microlesson into account. 
+## Embed Best Practices
+    
+Ensure alignment with GA's adult learning theory as outlined in "ga_learning_philosophy" and curriculum design best practices including:
+- Keep theory concise and actionable. - Make activities highly relevant and tool-aligned with tools. - Ensure accessibility for remote learners. - Never include any multiple choice questions or knowledge checks.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Instructional Architect", status="completed", output="{
+  "title": "",
+  "about": "This module aims to provide learners with a comprehensive understanding of a technical or non-technical topic. The content and structure have been carefully designed to meet the specific needs of the target audience, ensuring an engaging and effective learning experience.",
+  "tools": [],
+  "learner_persona": "",
+  "prerequisites": [
+    "Basic computer literacy",
+    "Familiarity with online learning platforms"
+  ],
+  "microlessons": [
+    {
+      "title": "Introduction to the Topic",
+      "id": 1,
+      "minutes": 0,
+      "learning_objective": "",
+      "outline": [
+        "Overview of the module content",
+        "Importance and relevance of the topic",
+        "Key concepts and terminology"
+      ]
+    }
+  ]
+}"
+2025-05-07 10:18:44: task_name="module_outline_qa_task", task="# Objectives
+In this task you will use the following information to review the module outline:
+For each microlesson in the module outline, you will:
+1. Ensure the microlesson outline is aligned with the learning objective of the microlesson. 2. Ensure the microlesson outline is appropriate for the learner persona. 3. Ensure the microlesson outline is realistic given the time constraints of the module.
+You may make changes to the module outline to ensure it is aligned with  these three rules. You should remove any items from the outline that do not directly contribute to the learning objective of the microlesson.
+The output of this task is a JSON file with the updated module outline.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Curriculum Quality Assurance Expert", status="started"
+2025-05-07 10:18:53: task_name="module_outline_qa_task", task="# Objectives
+In this task you will use the following information to review the module outline:
+For each microlesson in the module outline, you will:
+1. Ensure the microlesson outline is aligned with the learning objective of the microlesson. 2. Ensure the microlesson outline is appropriate for the learner persona. 3. Ensure the microlesson outline is realistic given the time constraints of the module.
+You may make changes to the module outline to ensure it is aligned with  these three rules. You should remove any items from the outline that do not directly contribute to the learning objective of the microlesson.
+The output of this task is a JSON file with the updated module outline.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Curriculum Quality Assurance Expert", status="completed", output="{
+  "title": "",
+  "about": "This module aims to provide learners with a comprehensive understanding of a technical or non-technical topic. The content and structure have been carefully designed to meet the specific needs of the target audience, ensuring an engaging and effective learning experience.",
+  "tools": [],
+  "learner_persona": "",
+  "prerequisites": [
+    "Basic computer literacy",
+    "Familiarity with online learning platforms"
+  ],
+  "microlessons": [
+    {
+      "title": "Introduction to the Topic",
+      "id": 1,
+      "minutes": 10,
+      "learning_objective": "Learners will understand the foundational aspects of the topic including its relevance, basic concepts, and key terminology, providing them with the initial context needed for further learning.",
+      "outline": [
+        "Overview of the module content and expectations",
+        "Discussion on the importance and relevance of the topic with real-world examples",
+        "Introduction to key concepts and terminology critical to the subject"
+      ]
+    }
+  ]
+}"
+2025-05-07 10:42:44: task_name="generate_module_outline_task", task="# Objectives
+As the Senior Instructional Architect, your primary task is to generate a detailed module outline for a technical (with coding) or non-technical module. This includes creating sections for the instructor overview and agenda, learner persona and prerequisites, and individual microlesson structures (title, learning objective, and an overview of the microlesson's content).
+Your process should involve the following steps, informed by the provided module topic, learner persona, how many minutes the module is, and learning objectives as follows:
+The module topic is:  
+The learner persona is: 
+The learning objectives are: []
+The module is 0 minutes long.
+The tools and software students have access to are: []
+You must:
+## Define Module Title 
+Use the provided title: .
+## Analyze Inputs and Infer Context
+    
+Review the provided module topic, learner persona, and any learning objectives. From these, infer:
+- Appropriate technical or domain prerequisites. - Learner motivations, goals, and challenges. - Real-world contexts and examples relevant to the topic.
+## Design Microlesson Structure
+    
+Determine the number and sequence of microlessons based on number of learning objectives provided. For each microlesson:
+    
+- Create a concise title. - Outline key theoretical concepts to be introduced. - Include a method for learners to check their understanding (e.g., a multiple-choice question, coding prompt, or reflection). - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
+## Populate the Outline with Clear, Industry-Relevant Content:
+    
+For each microlesson, provide a detailed overview of the key topics to be covered. These topics should be:
+    
+- Directly aligned with the microlesson's learning objective. - Drawn from current industry practices, tools, and knowledge. - Selected to build progressively toward the overall module goal. - Use descriptive subsection names that reflect the actual content (e.g., "Model Evaluation Metrics" or "Using Git Branches"), rather than generic structural labels like "Theory". - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction. - Ensure each microlesson balances conceptual understanding and practical application, tied clearly to industry-relevant skills and tasks. - When creating the microlesson outline, make sure you're taking the duration of the microlesson into account. 
+## Embed Best Practices
+    
+Ensure alignment with GA's adult learning theory as outlined in "ga_learning_philosophy" and curriculum design best practices including:
+- Keep theory concise and actionable. - Make activities highly relevant and tool-aligned with tools. - Ensure accessibility for remote learners. - Never include any multiple choice questions or knowledge checks.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Instructional Architect", status="started"
+2025-05-07 10:42:48: task_name="generate_module_outline_task", task="# Objectives
+As the Senior Instructional Architect, your primary task is to generate a detailed module outline for a technical (with coding) or non-technical module. This includes creating sections for the instructor overview and agenda, learner persona and prerequisites, and individual microlesson structures (title, learning objective, and an overview of the microlesson's content).
+Your process should involve the following steps, informed by the provided module topic, learner persona, how many minutes the module is, and learning objectives as follows:
+The module topic is:  
+The learner persona is: 
+The learning objectives are: []
+The module is 0 minutes long.
+The tools and software students have access to are: []
+You must:
+## Define Module Title 
+Use the provided title: .
+## Analyze Inputs and Infer Context
+    
+Review the provided module topic, learner persona, and any learning objectives. From these, infer:
+- Appropriate technical or domain prerequisites. - Learner motivations, goals, and challenges. - Real-world contexts and examples relevant to the topic.
+## Design Microlesson Structure
+    
+Determine the number and sequence of microlessons based on number of learning objectives provided. For each microlesson:
+    
+- Create a concise title. - Outline key theoretical concepts to be introduced. - Include a method for learners to check their understanding (e.g., a multiple-choice question, coding prompt, or reflection). - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
+## Populate the Outline with Clear, Industry-Relevant Content:
+    
+For each microlesson, provide a detailed overview of the key topics to be covered. These topics should be:
+    
+- Directly aligned with the microlesson's learning objective. - Drawn from current industry practices, tools, and knowledge. - Selected to build progressively toward the overall module goal. - Use descriptive subsection names that reflect the actual content (e.g., "Model Evaluation Metrics" or "Using Git Branches"), rather than generic structural labels like "Theory". - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction. - Ensure each microlesson balances conceptual understanding and practical application, tied clearly to industry-relevant skills and tasks. - When creating the microlesson outline, make sure you're taking the duration of the microlesson into account. 
+## Embed Best Practices
+    
+Ensure alignment with GA's adult learning theory as outlined in "ga_learning_philosophy" and curriculum design best practices including:
+- Keep theory concise and actionable. - Make activities highly relevant and tool-aligned with tools. - Ensure accessibility for remote learners. - Never include any multiple choice questions or knowledge checks.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Instructional Architect", status="completed", output="{
+  "title": "",
+  "about": "This module appears to be empty or undefined. Without specific information about the module topic, learner persona, learning objectives, duration, and tools, it's not possible to generate a comprehensive module outline. A properly structured module would typically include a clear title, a summary of its purpose, details about the target audience, prerequisites, and a series of microlessons with specific learning objectives and content outlines. Each of these elements would be tailored to the particular subject matter and learning goals of the module.",
+  "tools": [],
+  "learner_persona": "",
+  "prerequisites": ["Basic computer literacy"],
+  "microlessons": []
+}"
+2025-05-07 10:42:48: task_name="module_outline_qa_task", task="# Objectives
+In this task you will use the following information to review the module outline:
+For each microlesson in the module outline, you will:
+1. Ensure the microlesson outline is aligned with the learning objective of the microlesson. 2. Ensure the microlesson outline is appropriate for the learner persona. 3. Ensure the microlesson outline is realistic given the time constraints of the module.
+You may make changes to the module outline to ensure it is aligned with  these three rules. You should remove any items from the outline that do not directly contribute to the learning objective of the microlesson.
+The output of this task is a JSON file with the updated module outline.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Curriculum Quality Assurance Expert", status="started"
+2025-05-07 10:42:54: task_name="module_outline_qa_task", task="# Objectives
+In this task you will use the following information to review the module outline:
+For each microlesson in the module outline, you will:
+1. Ensure the microlesson outline is aligned with the learning objective of the microlesson. 2. Ensure the microlesson outline is appropriate for the learner persona. 3. Ensure the microlesson outline is realistic given the time constraints of the module.
+You may make changes to the module outline to ensure it is aligned with  these three rules. You should remove any items from the outline that do not directly contribute to the learning objective of the microlesson.
+The output of this task is a JSON file with the updated module outline.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Curriculum Quality Assurance Expert", status="completed", output="{
+  "title": "",
+  "about": "This module appears to be empty or undefined. Without specific information about the module topic, learner persona, learning objectives, duration, and tools, it's not possible to generate a comprehensive module outline. A properly structured module would typically include a clear title, a summary of its purpose, details about the target audience, prerequisites, and a series of microlessons with specific learning objectives and content outlines. Each of these elements would be tailored to the particular subject matter and learning goals of the module.",
+  "tools": [],
+  "learner_persona": "",
+  "prerequisites": ["Basic computer literacy"],
+  "microlessons": []
+}"
+2025-05-07 10:45:39: task_name="generate_module_outline_task", task="# Objectives
+As the Senior Instructional Architect, your primary task is to generate a detailed module outline for a technical (with coding) or non-technical module. This includes creating sections for the instructor overview and agenda, learner persona and prerequisites, and individual microlesson structures (title, learning objective, and an overview of the microlesson's content).
+Your process should involve the following steps, informed by the provided module topic, learner persona, how many minutes the module is, and learning objectives as follows:
+The module topic is:  
+The learner persona is: 
+The learning objectives are: []
+The module is 0 minutes long.
+The tools and software students have access to are: []
+You must:
+## Define Module Title 
+Use the provided title: .
+## Analyze Inputs and Infer Context
+    
+Review the provided module topic, learner persona, and any learning objectives. From these, infer:
+- Appropriate technical or domain prerequisites. - Learner motivations, goals, and challenges. - Real-world contexts and examples relevant to the topic.
+## Design Microlesson Structure
+    
+Determine the number and sequence of microlessons based on number of learning objectives provided. For each microlesson:
+    
+- Create a concise title. - Outline key theoretical concepts to be introduced. - Include a method for learners to check their understanding (e.g., a multiple-choice question, coding prompt, or reflection). - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
+## Populate the Outline with Clear, Industry-Relevant Content:
+    
+For each microlesson, provide a detailed overview of the key topics to be covered. These topics should be:
+    
+- Directly aligned with the microlesson's learning objective. - Drawn from current industry practices, tools, and knowledge. - Selected to build progressively toward the overall module goal. - Use descriptive subsection names that reflect the actual content (e.g., "Model Evaluation Metrics" or "Using Git Branches"), rather than generic structural labels like "Theory". - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction. - Ensure each microlesson balances conceptual understanding and practical application, tied clearly to industry-relevant skills and tasks. - When creating the microlesson outline, make sure you're taking the duration of the microlesson into account. 
+## Embed Best Practices
+    
+Ensure alignment with GA's adult learning theory as outlined in "ga_learning_philosophy" and curriculum design best practices including:
+- Keep theory concise and actionable. - Make activities highly relevant and tool-aligned with tools. - Ensure accessibility for remote learners. - Never include any multiple choice questions or knowledge checks.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Instructional Architect", status="started"
+2025-05-07 10:45:42: task_name="generate_module_outline_task", task="# Objectives
+As the Senior Instructional Architect, your primary task is to generate a detailed module outline for a technical (with coding) or non-technical module. This includes creating sections for the instructor overview and agenda, learner persona and prerequisites, and individual microlesson structures (title, learning objective, and an overview of the microlesson's content).
+Your process should involve the following steps, informed by the provided module topic, learner persona, how many minutes the module is, and learning objectives as follows:
+The module topic is:  
+The learner persona is: 
+The learning objectives are: []
+The module is 0 minutes long.
+The tools and software students have access to are: []
+You must:
+## Define Module Title 
+Use the provided title: .
+## Analyze Inputs and Infer Context
+    
+Review the provided module topic, learner persona, and any learning objectives. From these, infer:
+- Appropriate technical or domain prerequisites. - Learner motivations, goals, and challenges. - Real-world contexts and examples relevant to the topic.
+## Design Microlesson Structure
+    
+Determine the number and sequence of microlessons based on number of learning objectives provided. For each microlesson:
+    
+- Create a concise title. - Outline key theoretical concepts to be introduced. - Include a method for learners to check their understanding (e.g., a multiple-choice question, coding prompt, or reflection). - Include estimated time durations for each microlesson. These should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction.
+## Populate the Outline with Clear, Industry-Relevant Content:
+    
+For each microlesson, provide a detailed overview of the key topics to be covered. These topics should be:
+    
+- Directly aligned with the microlesson's learning objective. - Drawn from current industry practices, tools, and knowledge. - Selected to build progressively toward the overall module goal. - Use descriptive subsection names that reflect the actual content (e.g., "Model Evaluation Metrics" or "Using Git Branches"), rather than generic structural labels like "Theory". - Include estimated time durations for each microlesson. These estimates should reflect realistic pacing for remote or hybrid delivery, keeping the learner persona in mind, including time for guided practice and learner interaction. - Ensure each microlesson balances conceptual understanding and practical application, tied clearly to industry-relevant skills and tasks. - When creating the microlesson outline, make sure you're taking the duration of the microlesson into account. 
+## Embed Best Practices
+    
+Ensure alignment with GA's adult learning theory as outlined in "ga_learning_philosophy" and curriculum design best practices including:
+- Keep theory concise and actionable. - Make activities highly relevant and tool-aligned with tools. - Ensure accessibility for remote learners. - Never include any multiple choice questions or knowledge checks.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Instructional Architect", status="completed", output="{
+  "title": "",
+  "about": "This module has not been provided with sufficient information to generate a comprehensive outline. The module topic, learner persona, learning objectives, duration, and tools are all undefined or set to zero/empty. Without these crucial details, it's not possible to create a meaningful or accurate module structure that aligns with General Assembly's learning philosophy and curriculum design best practices.",
+  "tools": [],
+  "learner_persona": "",
+  "prerequisites": [],
+  "microlessons": []
+}"
+2025-05-07 10:45:42: task_name="module_outline_qa_task", task="# Objectives
+In this task you will use the following information to review the module outline:
+For each microlesson in the module outline, you will:
+1. Ensure the microlesson outline is aligned with the learning objective of the microlesson. 2. Ensure the microlesson outline is appropriate for the learner persona. 3. Ensure the microlesson outline is realistic given the time constraints of the module.
+You may make changes to the module outline to ensure it is aligned with  these three rules. You should remove any items from the outline that do not directly contribute to the learning objective of the microlesson.
+The output of this task is a JSON file with the updated module outline.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Curriculum Quality Assurance Expert", status="started"
+2025-05-07 10:45:49: task_name="module_outline_qa_task", task="# Objectives
+In this task you will use the following information to review the module outline:
+For each microlesson in the module outline, you will:
+1. Ensure the microlesson outline is aligned with the learning objective of the microlesson. 2. Ensure the microlesson outline is appropriate for the learner persona. 3. Ensure the microlesson outline is realistic given the time constraints of the module.
+You may make changes to the module outline to ensure it is aligned with  these three rules. You should remove any items from the outline that do not directly contribute to the learning objective of the microlesson.
+The output of this task is a JSON file with the updated module outline.
+## Context
+Follow the practices found in our internal documentation found below. Each document has a unique id and title and is fenced off with XML tags.
+<ga_learning_philosophy id=1 title="General Assembly Learning Philosophy" purpose="This document outlines General Assembly's research-backed learning philosophy, focused on real-world application, learner engagement, and accessibility. It guides the design of effective, flexible learning experiences that build practical skills and independence. By aligning educators and stakeholders around shared principles, it helps ensure consistent, high-impact learning across all GA programs."> 
+# General Assembly's Learning Philosophy
+
+## Putting Real Skills to Work
+
+The world is moving the fastest it ever has.
+
+And skills are somehow evolving even faster.
+
+At General Assembly, we understand how difficult it is for individuals and businesses alike to keep up with emerging technologies and the constant evolution of roles. The skills and tools needed to succeed in these roles are constantly changing. It can feel overwhelming for everyone—especially those early in their careers, contemplating new paths, or advancing in nontraditional ways—as well as for businesses inside and outside of the tech space.
+
+Today's workforce, regardless of industry, is increasingly fueled by tech skills that are becoming even more valuable as the digitally charged future of work, and all things AI, become more commonplace.
+
+We've spent the last 13 years working with employers, tech experts, and industry insiders to build a learning ecosystem that helps everyone thrive in a digital-first world. This ecosystem empowers efficient talent, skill, and process transformation and breaks down barriers for underrepresented and historically marginalized groups, particularly in tech.
+
+Over 100,000 students have gained skills and confidence through our programs. We believe that anyone can learn technical and workplace skills with the right experience, support, and community—and everyone should have the opportunity to improve their lives through learning.
+
+**All the best,**  
+Jeffrey Bergin  
+Vice President, Impact & Experience, General Assembly
+
+---
+
+## Our Learning Philosophy at a Glance
+
+Great learning experiences require planning and are grounded in evidence-based design. Our research-backed learning philosophy and guiding principles aim to:
+
+- **Engage** learners by capturing attention, encouraging persistence, and offering flexibility.
+- **Support** learners with feedback, community, and collaboration.
+- **Prepare** learners for real-world application and independence.
+
+---
+
+## Engage
+
+### Captivate and Encourage
+Learning happens best when it focuses on the most essential knowledge, connects to real-life relevance, and keeps learners motivated.
+
+### Focus on the Objectives
+Learning should concentrate on core content, activities, and assessments that align with objectives while minimizing distractions and extraneous content.
+
+### Give Learning Content the Spotlight
+User experience matters. Learning platforms and materials should be intuitive and focused, enabling easier understanding with purposeful navigation and visuals.
+
+### Keep Learners Going
+Motivate learners by making personal connections and showing relevance to their lives and jobs. Use real-world examples, case studies, and relatable stories.
+
+### Promote a Growth Mindset
+Learning should reinforce that skills can improve with practice. Learners need to hear and believe that improvement is always possible.
+
+### Be Flexible
+Learning must fit into diverse lifestyles, whether learners are students, professionals, caregivers, or all of the above. Design should support remote and blended learning.
+
+### Activate Remote Learning
+Remote and blended models often outperform traditional ones. Benefits include:
+- More time for practice
+- Greater personalization and feedback
+- Flexibility in schedule and learning style
+- Integrated experiences across formats
+
+---
+
+## Prepare
+
+### Focus on Real-World Application
+Learning should emphasize doing, not just knowing. Learners must be equipped to apply skills on the job.
+
+### Incorporate Realistic Practice
+Design learning to mimic real-world tasks, with contextual scenarios, practical exercises, and job-aligned challenges.
+
+### Model and Explain a Variety of Scenarios
+Expose learners to complex, varied problems and demonstrate how to solve them. Provide reasoning behind each step and explore different solution paths.
+
+### Make Routine Tasks Second Nature
+Use repetition and procedural learning to automate routine tasks. Enable learners to internalize processes.
+
+### Support Complex Problem-Solving
+For non-routine tasks, provide varied examples and theoretical support. Emphasize critical thinking, reasoning, and adaptability.
+
+### Build Independence
+Enable learners to perform independently, make decisions, and reflect on performance.
+
+#### Encourage Self-Regulated Learning
+Support planning, goal-setting, monitoring progress, and self-reflection.
+
+#### Allow Choice and Control
+Give learners autonomy over pacing, content order, and focus areas to support motivation and self-directed progress.
+
+#### Promote Independent Practice
+Encourage learners to solve problems before seeking help. Practice resilience and persistence to build job-readiness.
+
+---
+
+## Support
+
+### Emphasize Feedback
+Feedback should be specific, individualized, timely, and actionable. It helps learners understand mistakes, improve performance, and self-monitor.
+
+### Provide Scaffolding Through Coaching
+Use coaching and scaffolding to move learners from supported to independent performance. Scaffolding strategies include:
+- Simplifying tasks
+- Managing processes
+- Reducing frustration
+- Prompting reflection
+
+### Be Social
+Collaboration enhances learning, simulates real work environments, and supports social connection.
+
+#### Enable Collaborative Learning
+Encourage peer feedback, conversation, and real-audience work. Social learning fosters engagement and deeper understanding.
+
+#### Use Collaborative Learning Strategically
+Social learning works best when foundational skills are already in place. Use it for open-ended tasks, discussions, and complex problem-solving.
+
+---
+
+## Bringing It All Home
+
+At General Assembly, we believe effective learning should always:
+
+- **Engage**: Capture attention, motivate learners, and fit into their lives.
+- **Prepare**: Focus on real-world applications and build independence.
+- **Support**: Emphasize feedback, coaching, and community.
+
+---
+
+## Why General Assembly?
+
+General Assembly is a global talent and upskilling community. Since 2011, we’ve trained people from all backgrounds in practical, tech-focused skills needed in every modern company and role. Our learners benefit from hands-on instruction, global presence, and a passionate alumni community.
+
+As part of the Adecco Group and LHH, we help match talent to business needs.
+
+**All day, every day: We put real skills to work.**
+ </ga_learning_philosophy>
+", agent="Curriculum Quality Assurance Expert", status="completed", output="{
+  "title": "",
+  "about": "This module has not been provided with sufficient information to generate a comprehensive outline. The module topic, learner persona, learning objectives, duration, and tools are all undefined or set to zero/empty. Without these crucial details, it's not possible to create a meaningful or accurate module structure that aligns with General Assembly's learning philosophy and curriculum design best practices.",
+  "tools": [],
+  "learner_persona": "",
+  "prerequisites": [],
+  "microlessons": []
+}"
